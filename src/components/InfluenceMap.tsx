@@ -133,6 +133,17 @@ export default function InfluenceMap({ pins, artists, works, lineages, influence
       map.on("mouseenter", "nodes", () => (map.getCanvas().style.cursor = "pointer"));
       map.on("mouseleave", "nodes", () => (map.getCanvas().style.cursor = ""));
       map.resize();
+      // dash flow: march the dash pattern along the arcs (classic data-viz "energy" look)
+      const dashes: number[][] = [[0, 4, 3], [0.5, 4, 2.5], [1, 4, 2], [1.5, 4, 1.5], [2, 4, 1], [2.5, 4, 0.5], [3, 4, 0], [0, 0.5, 3, 3.5], [0, 1, 3, 3], [0, 1.5, 3, 2.5], [0, 2, 3, 2], [0, 2.5, 3, 1.5], [0, 3, 3, 1], [0, 3.5, 3, 0.5]];
+      let step = 0;
+      const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const tick = () => {
+        if (!map.getLayer("arcs")) return;
+        const i = Math.floor((performance.now() / 70) % dashes.length);
+        if (i !== step) { step = i; map.setPaintProperty("arcs", "line-dasharray", dashes[i]); }
+        requestAnimationFrame(tick);
+      };
+      if (!reduced) requestAnimationFrame(tick);
       setReady(true);
     });
     mapRef.current = map;

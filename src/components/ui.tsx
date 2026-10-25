@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CRAFT_COLOR, ROLE_COLOR } from "@/lib/colors";
 import type { Artist, Work, Contribution } from "@/lib/types";
+import { FillBar } from "@/components/retro";
 
 export function Window({
   title, children, className = "", right,
@@ -54,7 +55,7 @@ export function ArtistCard({ a }: { a: Artist }) {
 
 export function GarmentCard({ w, owner, funding }: { w: Work; owner?: Artist; funding: { units: number; goal: number } }) {
   return (
-    <Link href={`/shop/${w.slug}`} className="win block hover:border-magenta transition-colors">
+    <Link href={`/shop/${w.slug}`} className="win block hover:border-magenta transition-colors shake">
       <Art seed={w.id} className="aspect-[3/4]" />
       <div className="p-3 space-y-2">
         <div className="nav text-sm">{w.title}</div>
@@ -73,9 +74,11 @@ export function Progress({ value, max }: { value: number; max: number }) {
   const pct = max ? Math.min(100, Math.round((value / max) * 100)) : 0;
   const cells = 20;
   const filled = Math.round((pct / 100) * cells);
+  void filled; void cells;
   return (
-    <div className="mono text-yellow tracking-tighter" aria-label={`${pct}% funded`}>
-      [{"█".repeat(filled)}{"░".repeat(cells - filled)}] {pct}%
+    <div className="flex items-center gap-2" aria-label={`${pct}% funded`}>
+      <FillBar pct={pct} className="flex-1" />
+      <span className="mono text-yellow w-10 text-right">{pct}%</span>
     </div>
   );
 }

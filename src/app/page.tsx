@@ -2,6 +2,7 @@ import Link from "next/link";
 import { allArtists, garments, allDrops, workById, contributionsFor, fundingMap } from "@/lib/data";
 import { Art, GarmentCard, Window, Credits, byId } from "@/components/ui";
 import { KenteStrip, AdinkraGrid, GlyphColumn, NeonSign, RisoSun, Tunnel, Stars } from "@/components/motifs";
+import { BootScreen, Typewriter, Sparks } from "@/components/retro";
 
 export const revalidate = 300;
 
@@ -14,8 +15,19 @@ export default async function Home() {
   const A = byId(artists);
   const ticker = artists.map((a) => `${a.name.toUpperCase()} · ${a.city.toUpperCase()}`);
 
+  const boot = [
+    "COLLECTIVE OS v0.5 — ARTIST-OWNED",
+    "> mounting /map ............ ok",
+    `> loading artists ........... ${artists.length}`,
+    `> loading garments .......... ${g.length}`,
+    "> reading royalty ledger .... public, append-only",
+    "> lineage graph ............. walkable",
+    "> CULTURE IS THE PATTERN.",
+  ];
   return (
     <div>
+      <BootScreen lines={boot} />
+      <Sparks />
       {/* ticker on kente band */}
       <div className="relative overflow-hidden h-9">
         <KenteStrip className="absolute inset-0 w-full h-full opacity-90" />
@@ -26,10 +38,10 @@ export default async function Home() {
       </div>
 
       {/* ===== HERO: cosmic collage ===== */}
-      <section className="relative overflow-hidden border-b border-line" style={{ minHeight: "88vh" }}>
-        <Stars className="absolute inset-0 w-full h-full" />
+      <section className="relative overflow-hidden border-b border-line sweep" style={{ minHeight: "88vh" }}>
+        <Stars className="absolute inset-0 w-full h-full twinkle" />
         <Tunnel className="absolute -right-40 -top-40 w-[700px] h-[700px] opacity-30" />
-        <RisoSun className="absolute -left-24 top-1/3 w-[420px] h-[420px] opacity-80 halftone" />
+        <RisoSun className="absolute -left-24 top-1/3 w-[420px] h-[420px] opacity-80 spin-slow" />
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-bg via-bg/60 to-transparent" />
 
         {/* glyph columns left + right */}
@@ -45,7 +57,7 @@ export default async function Home() {
         </div>
 
         <div className="relative mx-auto max-w-7xl px-16 md:px-24 pt-24 pb-20">
-          <div className="mono text-yellow mb-5">SYS.READY — {artists.length} ARTISTS · {g.length} GARMENTS · 6 CONTINENTS · ONE MAP</div>
+          <div className="mono text-yellow mb-5 min-h-[1.5em]"><Typewriter text={`SYS.READY — ${artists.length} ARTISTS · ${g.length} GARMENTS · 6 CONTINENTS · ONE MAP`} /></div>
           <h1 className="display text-5xl sm:text-7xl lg:text-[7.5rem] riso max-w-5xl">
             CULTURE
             <br />IS THE
@@ -124,7 +136,7 @@ export default async function Home() {
       <section className="mx-auto max-w-7xl px-4 py-16">
         <div className="relative overflow-hidden border border-magenta p-8 md:p-14">
           <Stars className="absolute inset-0 w-full h-full opacity-60" seed={11} />
-          <RisoSun className="absolute -right-20 -bottom-24 w-72 h-72 opacity-70" />
+          <RisoSun className="absolute -right-20 -bottom-24 w-72 h-72 opacity-70 spin-slow" />
           <div className="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
               <h2 className="display text-5xl riso">ARE YOU A MAKER?</h2>

@@ -28,8 +28,8 @@ export default async function ArtistPage({ params }: { params: Promise<{ slug: s
   return (
     <div>
       {/* cover */}
-      <section className="relative h-72 md:h-96 overflow-hidden border-b border-line">
-        {a.cover ? <img src={a.cover} alt="" className="absolute inset-0 w-full h-full object-cover" /> : <Stars className="absolute inset-0 w-full h-full" seed={a.id.length * 3} />}
+      <section className="relative h-72 md:h-96 overflow-hidden border-b border-line sweep">
+        {a.cover ? <img src={a.cover} alt="" className="absolute inset-0 w-full h-full object-cover" /> : <Stars className="absolute inset-0 w-full h-full twinkle" seed={a.id.length * 3} />}
         <GlyphColumn className="absolute left-0 top-0 h-full w-8 md:w-12" seed={a.id.charCodeAt(5) % 6} />
         <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/40 to-transparent" />
         <div className="absolute right-6 md:right-16 top-6 vertical nav text-2xl md:text-4xl neon neon-yellow flicker hidden sm:block">{a.native_name || a.city}</div>

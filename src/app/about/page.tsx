@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div className="mx-auto max-w-5xl px-4 py-16 space-y-16">
       <section className="relative overflow-hidden border border-line p-8 md:p-14 min-h-[60vh] flex flex-col justify-end">
-        <Stars className="absolute inset-0 w-full h-full" seed={7} />
+        <Stars className="absolute inset-0 w-full h-full twinkle" seed={7} />
         <GlyphColumn className="absolute left-0 top-0 h-full w-10 md:w-14" seed={1} />
         <GlyphColumn className="absolute right-0 top-0 h-full w-10 md:w-14" seed={4} />
         <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-bg to-transparent" />
