@@ -1,0 +1,122 @@
+[
+  {
+    "id": "inf_001",
+    "work_id": "wrk_p01",
+    "place": "Bonwire, Ashanti",
+    "lat": 6.77,
+    "lng": -1.526,
+    "era": "17th c.–present",
+    "tradition": "Asante kente strip weaving",
+    "note": "Named adweneasa pattern lineage."
+  },
+  {
+    "id": "inf_002",
+    "work_id": "wrk_p02",
+    "place": "Bagru, Rajasthan",
+    "lat": 26.8104,
+    "lng": 75.542,
+    "era": "1700s",
+    "tradition": "Bagru block printing",
+    "note": "Buta (paisley) motif on natural dye."
+  },
+  {
+    "id": "inf_003",
+    "work_id": "wrk_p03",
+    "place": "Selbu, Trøndelag",
+    "lat": 63.22,
+    "lng": 11.04,
+    "era": "1850s",
+    "tradition": "Selbu two-colour knitting",
+    "note": "Marit Emstad's eight-petal rose."
+  },
+  {
+    "id": "inf_004",
+    "work_id": "wrk_p05",
+    "place": "Ramallah",
+    "lat": 31.9038,
+    "lng": 35.2034,
+    "era": "19th c.",
+    "tradition": "Palestinian tatreez",
+    "note": "Cypress and cross motifs."
+  },
+  {
+    "id": "inf_005",
+    "work_id": "wrk_p06",
+    "place": "Teotitlán del Valle",
+    "lat": 17.029,
+    "lng": -96.52,
+    "era": "pre-Hispanic",
+    "tradition": "Zapotec cochineal dyeing",
+    "note": "Insect-derived red."
+  },
+  {
+    "id": "inf_006",
+    "work_id": "wrk_p07",
+    "place": "Abeokuta, Ogun",
+    "lat": 7.1475,
+    "lng": 3.3619,
+    "era": "early 1900s",
+    "tradition": "Yoruba adire eleko",
+    "note": "Cassava-starch resist."
+  },
+  {
+    "id": "inf_007",
+    "work_id": "wrk_p08",
+    "place": "Tokushima",
+    "lat": 34.0658,
+    "lng": 134.5593,
+    "era": "Edo period",
+    "tradition": "Awa aizome indigo",
+    "note": "Sukumo fermented indigo."
+  },
+  {
+    "id": "inf_008",
+    "work_id": "wrk_g01",
+    "place": "Berlin, Kreuzberg",
+    "lat": 52.499,
+    "lng": 13.403,
+    "era": "1990s",
+    "tradition": "Techno-utilitarian clubwear",
+    "note": "Field jacket silhouette reference."
+  },
+  {
+    "id": "inf_009",
+    "work_id": "wrk_ph1",
+    "place": "Mexico City, Tepito",
+    "lat": 19.444,
+    "lng": -99.125,
+    "era": "2000s",
+    "tradition": "Tianguis CRT stalls",
+    "note": "Monitor-stack staging."
+  },
+  {
+    "id": "inf_010",
+    "work_id": "wrk_g06",
+    "place": "Johannesburg CBD",
+    "lat": -26.205,
+    "lng": 28.04,
+    "era": "2010s",
+    "tradition": "Security uniform surplus",
+    "note": "Source garments for upcycle."
+  },
+  {
+    "id": "inf_011",
+    "work_id": "wrk_t02",
+    "place": "Rio de Janeiro, Complexo do Alemão",
+    "lat": -22.86,
+    "lng": -43.27,
+    "era": "2000s",
+    "tradition": "Baile funk",
+    "note": "Tamborzão rhythm."
+  },
+  {
+    "id": "inf_012",
+    "work_id": "wrk_g03",
+    "place": "Seoul, Dongdaemun",
+    "lat": 37.5663,
+    "lng": 127.009,
+    "era": "2020s",
+    "tradition": "Modular techwear",
+    "note": "Detachable panel construction."
+  }
+]

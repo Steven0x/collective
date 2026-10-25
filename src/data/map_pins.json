@@ -1,0 +1,182 @@
+[
+  {
+    "artist_id": "art_001",
+    "name": "Abena Owusu-Ansah",
+    "craft": "textile",
+    "city": "Kumasi",
+    "lat": 6.6885,
+    "lng": -1.6244,
+    "work_count": 4
+  },
+  {
+    "artist_id": "art_002",
+    "name": "Lukas Brandt",
+    "craft": "design",
+    "city": "Berlin",
+    "lat": 52.52,
+    "lng": 13.405,
+    "work_count": 3
+  },
+  {
+    "artist_id": "art_003",
+    "name": "Ximena Ortiz Rueda",
+    "craft": "photo",
+    "city": "Mexico City",
+    "lat": 19.4326,
+    "lng": -99.1332,
+    "work_count": 5
+  },
+  {
+    "artist_id": "art_004",
+    "name": "Kenji Morimoto",
+    "craft": "sound",
+    "city": "Tokyo",
+    "lat": 35.6762,
+    "lng": 139.6503,
+    "work_count": 3
+  },
+  {
+    "artist_id": "art_005",
+    "name": "Priya Raghunathan",
+    "craft": "textile",
+    "city": "Jaipur",
+    "lat": 26.9124,
+    "lng": 75.7873,
+    "work_count": 2
+  },
+  {
+    "artist_id": "art_006",
+    "name": "Tomás Albuquerque",
+    "craft": "make",
+    "city": "Porto",
+    "lat": 41.1579,
+    "lng": -8.6291,
+    "work_count": 2
+  },
+  {
+    "artist_id": "art_007",
+    "name": "Zanele Mokoena",
+    "craft": "design",
+    "city": "Johannesburg",
+    "lat": -26.2041,
+    "lng": 28.0473,
+    "work_count": 2
+  },
+  {
+    "artist_id": "art_008",
+    "name": "Hana Kowalczyk",
+    "craft": "design",
+    "city": "Warsaw",
+    "lat": 52.2297,
+    "lng": 21.0122,
+    "work_count": 1
+  },
+  {
+    "artist_id": "art_009",
+    "name": "Diego Salazar",
+    "craft": "make",
+    "city": "Oaxaca",
+    "lat": 17.0732,
+    "lng": -96.7266,
+    "work_count": 2
+  },
+  {
+    "artist_id": "art_010",
+    "name": "Mei-Lin Zhao",
+    "craft": "photo",
+    "city": "Shanghai",
+    "lat": 31.2304,
+    "lng": 121.4737,
+    "work_count": 4
+  },
+  {
+    "artist_id": "art_011",
+    "name": "Oluwaseun Adeyemi",
+    "craft": "design",
+    "city": "Lagos",
+    "lat": 6.5244,
+    "lng": 3.3792,
+    "work_count": 3
+  },
+  {
+    "artist_id": "art_012",
+    "name": "Ingrid Solheim",
+    "craft": "textile",
+    "city": "Bergen",
+    "lat": 60.3913,
+    "lng": 5.3221,
+    "work_count": 2
+  },
+  {
+    "artist_id": "art_013",
+    "name": "Rafael Nunes",
+    "craft": "sound",
+    "city": "São Paulo",
+    "lat": -23.5505,
+    "lng": -46.6333,
+    "work_count": 3
+  },
+  {
+    "artist_id": "art_014",
+    "name": "Aiko Tanaka",
+    "craft": "make",
+    "city": "Kyoto",
+    "lat": 35.0116,
+    "lng": 135.7681,
+    "work_count": 2
+  },
+  {
+    "artist_id": "art_015",
+    "name": "Noor Haddad",
+    "craft": "design",
+    "city": "Beirut",
+    "lat": 33.8938,
+    "lng": 35.5018,
+    "work_count": 3
+  },
+  {
+    "artist_id": "art_016",
+    "name": "Callum Fraser",
+    "craft": "photo",
+    "city": "Glasgow",
+    "lat": 55.8642,
+    "lng": -4.2518,
+    "work_count": 6
+  },
+  {
+    "artist_id": "art_017",
+    "name": "Sofía Benítez",
+    "craft": "textile",
+    "city": "Buenos Aires",
+    "lat": -34.6037,
+    "lng": -58.3816,
+    "work_count": 2
+  },
+  {
+    "artist_id": "art_018",
+    "name": "Dae-Jung Park",
+    "craft": "design",
+    "city": "Seoul",
+    "lat": 37.5665,
+    "lng": 126.978,
+    "work_count": 2
+  },
+  {
+    "artist_id": "art_019",
+    "name": "Fatou Diallo",
+    "craft": "make",
+    "city": "Dakar",
+    "lat": 14.7167,
+    "lng": -17.4677,
+    "work_count": 9
+  },
+  {
+    "artist_id": "art_020",
+    "name": "Elias Weber",
+    "craft": "photo",
+    "city": "Vienna",
+    "lat": 48.2082,
+    "lng": 16.3738,
+    "work_count": 2
+  }
+]

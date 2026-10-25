@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# COLLECTIVE — site scaffold
 
-## Getting Started
+Artist-owned fashion ecosystem: influence map, artist directory, collaborate board, preorder shop, public royalty ledger.
 
-First, run the development server:
-
+## Run
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+cp .env.example .env.local   # already filled in for the collective Supabase project
+npm run dev                  # http://localhost:3000
 ```
+`.env.local` points at the live Supabase project (`evwcqfpidsrdepreygnw`, us-east-1) which already holds the seed data.
+Set `DATA_SOURCE=json` to run from `src/data/*.json` with no database.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+For preorders to write orders, add `SUPABASE_SERVICE_ROLE_KEY` (Supabase dashboard → Project Settings → API). Never ship it to the client.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## What's here
+- `src/app/` — Home, `/map`, `/artists`, `/artists/[slug]`, `/collaborate`, `/shop`, `/shop/[slug]`, `/about`, `/me`
+- `src/components/InfluenceMap.tsx` — MapLibre map: craft-coloured pins → artist sidebar → click a garment → influence arcs light up + process timeline scrubber → walk the graph via contributors; trace-forward to derivatives.
+- `src/app/api/map/pins` and `src/app/api/works/[id]/lineage` — the two JSON endpoints the map consumes.
+- `src/lib/data.ts` — async data layer. Reads Supabase (tables + `map_pins`, `work_funding`, `artist_earnings` views + `lineage_json()` RPC); falls back to `src/data/*.json` when `DATA_SOURCE=json`.
+- `src/app/api/preorder` + `src/components/PreorderButton.tsx` — mock checkout that calls the `place_preorder()` RPC: creates the collector, the order, and accrues ledger rows for every *confirmed* contributor. Stripe later replaces only the front half (Checkout Session → webhook → same RPC).
+- `src/data/` — fictional seed data (20 artists, 24 works, 47 contributions, 12 influences, 79 timeline events, 52 orders, 233 ledger rows). Regenerate with `python3 seed/generate.py`.
+- `supabase/schema.sql` — Postgres schema matching the JSON 1:1, PostGIS pins, recursive lineage function, public append-only ledger.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Visual direction (v0.4)
+Riso / neon / cosmic — Afrofuturism × Asian futurism × Y2K. Palette in `globals.css` (`--magenta --yellow --indigo --cyan --gold --red` on deep indigo `#0b0a1a`, warm paper ink). Paper grain and halftone overlays, riso color-offset headlines (`.riso`, `.riso-yellow`), neon signage (`.neon`, `NeonSign`), and procedural cultural motifs in `src/components/motifs.tsx` (`KenteStrip`, `AdinkraGrid`, `GlyphColumn`, `RisoSun`, `Tunnel`, `Stars`). These are abstractions in the palette, not reproductions — swap in artists' real work as it arrives. Custom classes live in `@layer components` so Tailwind utilities (e.g. `absolute`) always win.
 
-## Learn More
+## Fonts
+Chakra Petch (nav) and Space Grotesk (body) load from Google Fonts. Neue Machina Inktrap (display) and Departure Mono (readouts) are licensed — drop the `.woff2` files into `public/fonts/` and uncomment the `@font-face` block in `src/app/globals.css`.
 
-To learn more about Next.js, take a look at the following resources:
+## Map tiles
+Scaffold uses CARTO dark raster tiles (free, attribution required). For the retro-topographic look, make a style in MapTiler and replace `STYLE` in `InfluenceMap.tsx` with the style URL.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Accounts & roles
+Magic-link sign-in (`/login`, Supabase Auth, no password). One account, three roles stored in `profiles.role`:
+- **collector** (default) — `/me`: orders, become-an-artist form.
+- **artist** — `/me/studio`: earnings, credit inbox (accept/decline credits others declare on you), publish works with media upload + contributor splits that must total 100. Publishing unlocks once a curator approves the profile.
+- **curator** — `/admin`: approve artist applications, override pending credits, create/advance drops, mark accrued royalties paid, export accrued CSV.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Make yourself curator once (Supabase → SQL editor):
+```sql
+update profiles set role = 'curator' where email = 'you@example.com';
+```
+(An allowlist trigger for this was blocked by a permission check during the build; one line does the job.)
 
-## Deploy on Vercel
+## Payments
+`PreorderButton` tries `/api/checkout` (Stripe Checkout) first and falls back to `/api/preorder` (mock, writes a real order) when `STRIPE_SECRET_KEY` is unset. Webhook: `/api/stripe/webhook` → `place_preorder(..., stripe_session_id)`, idempotent on session id. Local test: `stripe listen --forward-to localhost:3000/api/stripe/webhook`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Database
+Live in Supabase. `supabase/schema.sql` is the reference; the applied migrations are:
+`collective_schema_v0`, `map_views_and_lineage_json`, `place_preorder_rpc`, `auth_profiles_roles_and_studio_rpcs`. RLS: public read on everything except `collectors`; writes go through RPCs with the service role.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Next
+1. Add Stripe test keys → real checkout. Add `SUPABASE_SERVICE_ROLE_KEY` → mock preorders + webhook can write.
+2. Email: Resend for credit-request and approval notifications (hooks are the `respond_to_credit` / `curator_set_*` RPCs).
+3. Licensing flow on `/collaborate` (the `licenses` table + RLS are ready; needs the request/accept UI).
+4. Replace `<Art>` gradients on public pages with `work.media[]` once artists upload.
+5. Link `collectors.user_id` at checkout so orders key on the account, not the email hash.

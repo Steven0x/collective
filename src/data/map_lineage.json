@@ -1,0 +1,2558 @@
+{
+  "wrk_g01": {
+    "work_id": "wrk_g01",
+    "nodes": [
+      {
+        "contribution_id": "con_001",
+        "artist_id": "art_002",
+        "name": "Lukas Brandt",
+        "role": "designer",
+        "lat": 52.52,
+        "lng": 13.405,
+        "split_pct": 50,
+        "source_work_id": null
+      },
+      {
+        "contribution_id": "con_002",
+        "artist_id": "art_001",
+        "name": "Abena Owusu-Ansah",
+        "role": "pattern",
+        "lat": 6.6885,
+        "lng": -1.6244,
+        "split_pct": 20,
+        "source_work_id": "wrk_p01"
+      },
+      {
+        "influence_id": "inf_001",
+        "name": "Asante kente strip weaving",
+        "role": "influence",
+        "lat": 6.77,
+        "lng": -1.526,
+        "era": "17th c.–present",
+        "place": "Bonwire, Ashanti"
+      },
+      {
+        "contribution_id": "con_003",
+        "artist_id": "art_003",
+        "name": "Ximena Ortiz Rueda",
+        "role": "photography",
+        "lat": 19.4326,
+        "lng": -99.1332,
+        "split_pct": 8,
+        "source_work_id": "wrk_ph1"
+      },
+      {
+        "influence_id": "inf_009",
+        "name": "Tianguis CRT stalls",
+        "role": "influence",
+        "lat": 19.444,
+        "lng": -99.125,
+        "era": "2000s",
+        "place": "Mexico City, Tepito"
+      },
+      {
+        "contribution_id": "con_004",
+        "artist_id": "art_004",
+        "name": "Kenji Morimoto",
+        "role": "soundtrack",
+        "lat": 35.6762,
+        "lng": 139.6503,
+        "split_pct": 4,
+        "source_work_id": "wrk_t01"
+      },
+      {
+        "contribution_id": "con_005",
+        "artist_id": "art_019",
+        "name": "Fatou Diallo",
+        "role": "production",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "split_pct": 18,
+        "source_work_id": null
+      },
+      {
+        "influence_id": "inf_008",
+        "name": "Techno-utilitarian clubwear",
+        "role": "influence",
+        "lat": 52.499,
+        "lng": 13.403,
+        "era": "1990s",
+        "place": "Berlin, Kreuzberg"
+      }
+    ],
+    "arcs": [
+      {
+        "from": [
+          13.405,
+          52.52
+        ],
+        "to": [
+          13.405,
+          52.52
+        ],
+        "type": "designer",
+        "contribution_id": "con_001"
+      },
+      {
+        "from": [
+          -1.6244,
+          6.6885
+        ],
+        "to": [
+          13.405,
+          52.52
+        ],
+        "type": "pattern",
+        "contribution_id": "con_002"
+      },
+      {
+        "from": [
+          -1.526,
+          6.77
+        ],
+        "to": [
+          -1.6244,
+          6.6885
+        ],
+        "type": "influence",
+        "influence_id": "inf_001"
+      },
+      {
+        "from": [
+          -99.1332,
+          19.4326
+        ],
+        "to": [
+          13.405,
+          52.52
+        ],
+        "type": "photography",
+        "contribution_id": "con_003"
+      },
+      {
+        "from": [
+          -99.125,
+          19.444
+        ],
+        "to": [
+          -99.1332,
+          19.4326
+        ],
+        "type": "influence",
+        "influence_id": "inf_009"
+      },
+      {
+        "from": [
+          139.6503,
+          35.6762
+        ],
+        "to": [
+          13.405,
+          52.52
+        ],
+        "type": "soundtrack",
+        "contribution_id": "con_004"
+      },
+      {
+        "from": [
+          -17.4677,
+          14.7167
+        ],
+        "to": [
+          13.405,
+          52.52
+        ],
+        "type": "production",
+        "contribution_id": "con_005"
+      },
+      {
+        "from": [
+          13.403,
+          52.499
+        ],
+        "to": [
+          13.405,
+          52.52
+        ],
+        "type": "influence",
+        "influence_id": "inf_008"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "evt_001",
+        "work_id": "wrk_g01",
+        "stage": "concept",
+        "date": "2025-07-07",
+        "city": "Berlin",
+        "lat": 52.52,
+        "lng": 13.405,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_002",
+        "work_id": "wrk_g01",
+        "stage": "pattern_licensed",
+        "date": "2025-07-22",
+        "city": "Kumasi",
+        "lat": 6.6885,
+        "lng": -1.6244,
+        "contribution_id": "con_002",
+        "media": null
+      },
+      {
+        "id": "evt_003",
+        "work_id": "wrk_g01",
+        "stage": "sample",
+        "date": "2025-08-06",
+        "city": "Berlin",
+        "lat": 52.52,
+        "lng": 13.405,
+        "contribution_id": null,
+        "media": "/media/timeline/wrk_g01_sample.jpg"
+      },
+      {
+        "id": "evt_004",
+        "work_id": "wrk_g01",
+        "stage": "campaign_shoot",
+        "date": "2025-09-08",
+        "city": "Mexico City",
+        "lat": 19.4326,
+        "lng": -99.1332,
+        "contribution_id": "con_003",
+        "media": "/media/timeline/wrk_g01_campaign_shoot.jpg"
+      },
+      {
+        "id": "evt_005",
+        "work_id": "wrk_g01",
+        "stage": "preorder_open",
+        "date": "2025-10-03",
+        "city": "Berlin",
+        "lat": 52.52,
+        "lng": 13.405,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_006",
+        "work_id": "wrk_g01",
+        "stage": "funded",
+        "date": "2025-10-26",
+        "city": "Berlin",
+        "lat": 52.52,
+        "lng": 13.405,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_007",
+        "work_id": "wrk_g01",
+        "stage": "production",
+        "date": "2025-11-20",
+        "city": "Dakar",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "contribution_id": "con_005",
+        "media": "/media/timeline/wrk_g01_production.jpg"
+      },
+      {
+        "id": "evt_008",
+        "work_id": "wrk_g01",
+        "stage": "shipped",
+        "date": "2025-12-15",
+        "city": "Dakar",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "contribution_id": "con_005",
+        "media": null
+      },
+      {
+        "id": "evt_009",
+        "work_id": "wrk_g01",
+        "stage": "upcycled",
+        "date": "2026-02-14",
+        "city": "Johannesburg",
+        "lat": -26.2041,
+        "lng": 28.0473,
+        "contribution_id": "con_041",
+        "media": null
+      }
+    ],
+    "derivatives": [
+      "wrk_g09"
+    ]
+  },
+  "wrk_g02": {
+    "work_id": "wrk_g02",
+    "nodes": [
+      {
+        "contribution_id": "con_006",
+        "artist_id": "art_008",
+        "name": "Hana Kowalczyk",
+        "role": "designer",
+        "lat": 52.2297,
+        "lng": 21.0122,
+        "split_pct": 55,
+        "source_work_id": null
+      },
+      {
+        "contribution_id": "con_007",
+        "artist_id": "art_005",
+        "name": "Priya Raghunathan",
+        "role": "pattern",
+        "lat": 26.9124,
+        "lng": 75.7873,
+        "split_pct": 20,
+        "source_work_id": "wrk_p02"
+      },
+      {
+        "influence_id": "inf_002",
+        "name": "Bagru block printing",
+        "role": "influence",
+        "lat": 26.8104,
+        "lng": 75.542,
+        "era": "1700s",
+        "place": "Bagru, Rajasthan"
+      },
+      {
+        "contribution_id": "con_008",
+        "artist_id": "art_010",
+        "name": "Mei-Lin Zhao",
+        "role": "photography",
+        "lat": 31.2304,
+        "lng": 121.4737,
+        "split_pct": 8,
+        "source_work_id": "wrk_ph2"
+      },
+      {
+        "contribution_id": "con_009",
+        "artist_id": "art_019",
+        "name": "Fatou Diallo",
+        "role": "production",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "split_pct": 17,
+        "source_work_id": null
+      }
+    ],
+    "arcs": [
+      {
+        "from": [
+          21.0122,
+          52.2297
+        ],
+        "to": [
+          21.0122,
+          52.2297
+        ],
+        "type": "designer",
+        "contribution_id": "con_006"
+      },
+      {
+        "from": [
+          75.7873,
+          26.9124
+        ],
+        "to": [
+          21.0122,
+          52.2297
+        ],
+        "type": "pattern",
+        "contribution_id": "con_007"
+      },
+      {
+        "from": [
+          75.542,
+          26.8104
+        ],
+        "to": [
+          75.7873,
+          26.9124
+        ],
+        "type": "influence",
+        "influence_id": "inf_002"
+      },
+      {
+        "from": [
+          121.4737,
+          31.2304
+        ],
+        "to": [
+          21.0122,
+          52.2297
+        ],
+        "type": "photography",
+        "contribution_id": "con_008"
+      },
+      {
+        "from": [
+          -17.4677,
+          14.7167
+        ],
+        "to": [
+          21.0122,
+          52.2297
+        ],
+        "type": "production",
+        "contribution_id": "con_009"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "evt_010",
+        "work_id": "wrk_g02",
+        "stage": "concept",
+        "date": "2025-01-22",
+        "city": "Warsaw",
+        "lat": 52.2297,
+        "lng": 21.0122,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_011",
+        "work_id": "wrk_g02",
+        "stage": "pattern_licensed",
+        "date": "2025-02-23",
+        "city": "Jaipur",
+        "lat": 26.9124,
+        "lng": 75.7873,
+        "contribution_id": "con_007",
+        "media": null
+      },
+      {
+        "id": "evt_012",
+        "work_id": "wrk_g02",
+        "stage": "sample",
+        "date": "2025-03-27",
+        "city": "Warsaw",
+        "lat": 52.2297,
+        "lng": 21.0122,
+        "contribution_id": null,
+        "media": "/media/timeline/wrk_g02_sample.jpg"
+      },
+      {
+        "id": "evt_013",
+        "work_id": "wrk_g02",
+        "stage": "campaign_shoot",
+        "date": "2025-04-11",
+        "city": "Shanghai",
+        "lat": 31.2304,
+        "lng": 121.4737,
+        "contribution_id": "con_008",
+        "media": "/media/timeline/wrk_g02_campaign_shoot.jpg"
+      },
+      {
+        "id": "evt_014",
+        "work_id": "wrk_g02",
+        "stage": "preorder_open",
+        "date": "2025-04-24",
+        "city": "Warsaw",
+        "lat": 52.2297,
+        "lng": 21.0122,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_015",
+        "work_id": "wrk_g02",
+        "stage": "funded",
+        "date": "2025-05-18",
+        "city": "Warsaw",
+        "lat": 52.2297,
+        "lng": 21.0122,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_016",
+        "work_id": "wrk_g02",
+        "stage": "production",
+        "date": "2025-06-22",
+        "city": "Dakar",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "contribution_id": "con_009",
+        "media": "/media/timeline/wrk_g02_production.jpg"
+      },
+      {
+        "id": "evt_017",
+        "work_id": "wrk_g02",
+        "stage": "shipped",
+        "date": "2025-07-14",
+        "city": "Dakar",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "contribution_id": "con_009",
+        "media": null
+      }
+    ],
+    "derivatives": []
+  },
+  "wrk_g03": {
+    "work_id": "wrk_g03",
+    "nodes": [
+      {
+        "contribution_id": "con_010",
+        "artist_id": "art_018",
+        "name": "Dae-Jung Park",
+        "role": "designer",
+        "lat": 37.5665,
+        "lng": 126.978,
+        "split_pct": 50,
+        "source_work_id": null
+      },
+      {
+        "contribution_id": "con_011",
+        "artist_id": "art_012",
+        "name": "Ingrid Solheim",
+        "role": "pattern",
+        "lat": 60.3913,
+        "lng": 5.3221,
+        "split_pct": 22,
+        "source_work_id": "wrk_p03"
+      },
+      {
+        "influence_id": "inf_003",
+        "name": "Selbu two-colour knitting",
+        "role": "influence",
+        "lat": 63.22,
+        "lng": 11.04,
+        "era": "1850s",
+        "place": "Selbu, Trøndelag"
+      },
+      {
+        "contribution_id": "con_012",
+        "artist_id": "art_016",
+        "name": "Callum Fraser",
+        "role": "photography",
+        "lat": 55.8642,
+        "lng": -4.2518,
+        "split_pct": 6,
+        "source_work_id": "wrk_ph3"
+      },
+      {
+        "contribution_id": "con_013",
+        "artist_id": "art_016",
+        "name": "Callum Fraser",
+        "role": "soundtrack",
+        "lat": 55.8642,
+        "lng": -4.2518,
+        "split_pct": 4,
+        "source_work_id": "wrk_t03"
+      },
+      {
+        "contribution_id": "con_014",
+        "artist_id": "art_019",
+        "name": "Fatou Diallo",
+        "role": "production",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "split_pct": 18,
+        "source_work_id": null
+      },
+      {
+        "influence_id": "inf_012",
+        "name": "Modular techwear",
+        "role": "influence",
+        "lat": 37.5663,
+        "lng": 127.009,
+        "era": "2020s",
+        "place": "Seoul, Dongdaemun"
+      }
+    ],
+    "arcs": [
+      {
+        "from": [
+          126.978,
+          37.5665
+        ],
+        "to": [
+          126.978,
+          37.5665
+        ],
+        "type": "designer",
+        "contribution_id": "con_010"
+      },
+      {
+        "from": [
+          5.3221,
+          60.3913
+        ],
+        "to": [
+          126.978,
+          37.5665
+        ],
+        "type": "pattern",
+        "contribution_id": "con_011"
+      },
+      {
+        "from": [
+          11.04,
+          63.22
+        ],
+        "to": [
+          5.3221,
+          60.3913
+        ],
+        "type": "influence",
+        "influence_id": "inf_003"
+      },
+      {
+        "from": [
+          -4.2518,
+          55.8642
+        ],
+        "to": [
+          126.978,
+          37.5665
+        ],
+        "type": "photography",
+        "contribution_id": "con_012"
+      },
+      {
+        "from": [
+          -4.2518,
+          55.8642
+        ],
+        "to": [
+          126.978,
+          37.5665
+        ],
+        "type": "soundtrack",
+        "contribution_id": "con_013"
+      },
+      {
+        "from": [
+          -17.4677,
+          14.7167
+        ],
+        "to": [
+          126.978,
+          37.5665
+        ],
+        "type": "production",
+        "contribution_id": "con_014"
+      },
+      {
+        "from": [
+          127.009,
+          37.5663
+        ],
+        "to": [
+          126.978,
+          37.5665
+        ],
+        "type": "influence",
+        "influence_id": "inf_012"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "evt_018",
+        "work_id": "wrk_g03",
+        "stage": "concept",
+        "date": "2025-02-08",
+        "city": "Seoul",
+        "lat": 37.5665,
+        "lng": 126.978,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_019",
+        "work_id": "wrk_g03",
+        "stage": "pattern_licensed",
+        "date": "2025-02-26",
+        "city": "Bergen",
+        "lat": 60.3913,
+        "lng": 5.3221,
+        "contribution_id": "con_011",
+        "media": null
+      },
+      {
+        "id": "evt_020",
+        "work_id": "wrk_g03",
+        "stage": "sample",
+        "date": "2025-03-16",
+        "city": "Seoul",
+        "lat": 37.5665,
+        "lng": 126.978,
+        "contribution_id": null,
+        "media": "/media/timeline/wrk_g03_sample.jpg"
+      },
+      {
+        "id": "evt_021",
+        "work_id": "wrk_g03",
+        "stage": "campaign_shoot",
+        "date": "2025-04-14",
+        "city": "Glasgow",
+        "lat": 55.8642,
+        "lng": -4.2518,
+        "contribution_id": "con_012",
+        "media": "/media/timeline/wrk_g03_campaign_shoot.jpg"
+      },
+      {
+        "id": "evt_022",
+        "work_id": "wrk_g03",
+        "stage": "preorder_open",
+        "date": "2025-05-10",
+        "city": "Seoul",
+        "lat": 37.5665,
+        "lng": 126.978,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_023",
+        "work_id": "wrk_g03",
+        "stage": "funded",
+        "date": "2025-05-26",
+        "city": "Seoul",
+        "lat": 37.5665,
+        "lng": 126.978,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_024",
+        "work_id": "wrk_g03",
+        "stage": "production",
+        "date": "2025-06-20",
+        "city": "Dakar",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "contribution_id": "con_014",
+        "media": "/media/timeline/wrk_g03_production.jpg"
+      },
+      {
+        "id": "evt_025",
+        "work_id": "wrk_g03",
+        "stage": "shipped",
+        "date": "2025-07-07",
+        "city": "Dakar",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "contribution_id": "con_014",
+        "media": null
+      }
+    ],
+    "derivatives": []
+  },
+  "wrk_g04": {
+    "work_id": "wrk_g04",
+    "nodes": [
+      {
+        "contribution_id": "con_015",
+        "artist_id": "art_002",
+        "name": "Lukas Brandt",
+        "role": "designer",
+        "lat": 52.52,
+        "lng": 13.405,
+        "split_pct": 52,
+        "source_work_id": null
+      },
+      {
+        "contribution_id": "con_016",
+        "artist_id": "art_017",
+        "name": "Sofía Benítez",
+        "role": "pattern",
+        "lat": -34.6037,
+        "lng": -58.3816,
+        "split_pct": 22,
+        "source_work_id": "wrk_p04"
+      },
+      {
+        "contribution_id": "con_017",
+        "artist_id": "art_003",
+        "name": "Ximena Ortiz Rueda",
+        "role": "photography",
+        "lat": 19.4326,
+        "lng": -99.1332,
+        "split_pct": 8,
+        "source_work_id": "wrk_ph1"
+      },
+      {
+        "influence_id": "inf_009",
+        "name": "Tianguis CRT stalls",
+        "role": "influence",
+        "lat": 19.444,
+        "lng": -99.125,
+        "era": "2000s",
+        "place": "Mexico City, Tepito"
+      },
+      {
+        "contribution_id": "con_018",
+        "artist_id": "art_013",
+        "name": "Rafael Nunes",
+        "role": "soundtrack",
+        "lat": -23.5505,
+        "lng": -46.6333,
+        "split_pct": 4,
+        "source_work_id": "wrk_t02"
+      },
+      {
+        "influence_id": "inf_011",
+        "name": "Baile funk",
+        "role": "influence",
+        "lat": -22.86,
+        "lng": -43.27,
+        "era": "2000s",
+        "place": "Rio de Janeiro, Complexo do Alemão"
+      },
+      {
+        "contribution_id": "con_019",
+        "artist_id": "art_019",
+        "name": "Fatou Diallo",
+        "role": "production",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "split_pct": 14,
+        "source_work_id": null
+      }
+    ],
+    "arcs": [
+      {
+        "from": [
+          13.405,
+          52.52
+        ],
+        "to": [
+          13.405,
+          52.52
+        ],
+        "type": "designer",
+        "contribution_id": "con_015"
+      },
+      {
+        "from": [
+          -58.3816,
+          -34.6037
+        ],
+        "to": [
+          13.405,
+          52.52
+        ],
+        "type": "pattern",
+        "contribution_id": "con_016"
+      },
+      {
+        "from": [
+          -99.1332,
+          19.4326
+        ],
+        "to": [
+          13.405,
+          52.52
+        ],
+        "type": "photography",
+        "contribution_id": "con_017"
+      },
+      {
+        "from": [
+          -99.125,
+          19.444
+        ],
+        "to": [
+          -99.1332,
+          19.4326
+        ],
+        "type": "influence",
+        "influence_id": "inf_009"
+      },
+      {
+        "from": [
+          -46.6333,
+          -23.5505
+        ],
+        "to": [
+          13.405,
+          52.52
+        ],
+        "type": "soundtrack",
+        "contribution_id": "con_018"
+      },
+      {
+        "from": [
+          -43.27,
+          -22.86
+        ],
+        "to": [
+          -46.6333,
+          -23.5505
+        ],
+        "type": "influence",
+        "influence_id": "inf_011"
+      },
+      {
+        "from": [
+          -17.4677,
+          14.7167
+        ],
+        "to": [
+          13.405,
+          52.52
+        ],
+        "type": "production",
+        "contribution_id": "con_019"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "evt_026",
+        "work_id": "wrk_g04",
+        "stage": "concept",
+        "date": "2025-12-08",
+        "city": "Berlin",
+        "lat": 52.52,
+        "lng": 13.405,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_027",
+        "work_id": "wrk_g04",
+        "stage": "pattern_licensed",
+        "date": "2026-01-16",
+        "city": "Buenos Aires",
+        "lat": -34.6037,
+        "lng": -58.3816,
+        "contribution_id": "con_016",
+        "media": null
+      },
+      {
+        "id": "evt_028",
+        "work_id": "wrk_g04",
+        "stage": "sample",
+        "date": "2026-01-30",
+        "city": "Berlin",
+        "lat": 52.52,
+        "lng": 13.405,
+        "contribution_id": null,
+        "media": "/media/timeline/wrk_g04_sample.jpg"
+      },
+      {
+        "id": "evt_029",
+        "work_id": "wrk_g04",
+        "stage": "campaign_shoot",
+        "date": "2026-02-25",
+        "city": "Mexico City",
+        "lat": 19.4326,
+        "lng": -99.1332,
+        "contribution_id": "con_017",
+        "media": "/media/timeline/wrk_g04_campaign_shoot.jpg"
+      },
+      {
+        "id": "evt_030",
+        "work_id": "wrk_g04",
+        "stage": "preorder_open",
+        "date": "2026-04-03",
+        "city": "Berlin",
+        "lat": 52.52,
+        "lng": 13.405,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_031",
+        "work_id": "wrk_g04",
+        "stage": "funded",
+        "date": "2026-05-12",
+        "city": "Berlin",
+        "lat": 52.52,
+        "lng": 13.405,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_032",
+        "work_id": "wrk_g04",
+        "stage": "production",
+        "date": "2026-06-20",
+        "city": "Dakar",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "contribution_id": "con_019",
+        "media": "/media/timeline/wrk_g04_production.jpg"
+      },
+      {
+        "id": "evt_033",
+        "work_id": "wrk_g04",
+        "stage": "shipped",
+        "date": "2026-07-19",
+        "city": "Dakar",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "contribution_id": "con_019",
+        "media": null
+      }
+    ],
+    "derivatives": []
+  },
+  "wrk_g05": {
+    "work_id": "wrk_g05",
+    "nodes": [
+      {
+        "contribution_id": "con_020",
+        "artist_id": "art_015",
+        "name": "Noor Haddad",
+        "role": "designer",
+        "lat": 33.8938,
+        "lng": 35.5018,
+        "split_pct": 60,
+        "source_work_id": null
+      },
+      {
+        "contribution_id": "con_021",
+        "artist_id": "art_015",
+        "name": "Noor Haddad",
+        "role": "pattern",
+        "lat": 33.8938,
+        "lng": 35.5018,
+        "split_pct": 10,
+        "source_work_id": "wrk_p05"
+      },
+      {
+        "influence_id": "inf_004",
+        "name": "Palestinian tatreez",
+        "role": "influence",
+        "lat": 31.9038,
+        "lng": 35.2034,
+        "era": "19th c.",
+        "place": "Ramallah"
+      },
+      {
+        "contribution_id": "con_022",
+        "artist_id": "art_020",
+        "name": "Elias Weber",
+        "role": "styling",
+        "lat": 48.2082,
+        "lng": 16.3738,
+        "split_pct": 6,
+        "source_work_id": null
+      },
+      {
+        "contribution_id": "con_023",
+        "artist_id": "art_010",
+        "name": "Mei-Lin Zhao",
+        "role": "photography",
+        "lat": 31.2304,
+        "lng": 121.4737,
+        "split_pct": 8,
+        "source_work_id": "wrk_ph2"
+      },
+      {
+        "contribution_id": "con_024",
+        "artist_id": "art_019",
+        "name": "Fatou Diallo",
+        "role": "production",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "split_pct": 16,
+        "source_work_id": null
+      }
+    ],
+    "arcs": [
+      {
+        "from": [
+          35.5018,
+          33.8938
+        ],
+        "to": [
+          35.5018,
+          33.8938
+        ],
+        "type": "designer",
+        "contribution_id": "con_020"
+      },
+      {
+        "from": [
+          35.5018,
+          33.8938
+        ],
+        "to": [
+          35.5018,
+          33.8938
+        ],
+        "type": "pattern",
+        "contribution_id": "con_021"
+      },
+      {
+        "from": [
+          35.2034,
+          31.9038
+        ],
+        "to": [
+          35.5018,
+          33.8938
+        ],
+        "type": "influence",
+        "influence_id": "inf_004"
+      },
+      {
+        "from": [
+          16.3738,
+          48.2082
+        ],
+        "to": [
+          35.5018,
+          33.8938
+        ],
+        "type": "styling",
+        "contribution_id": "con_022"
+      },
+      {
+        "from": [
+          121.4737,
+          31.2304
+        ],
+        "to": [
+          35.5018,
+          33.8938
+        ],
+        "type": "photography",
+        "contribution_id": "con_023"
+      },
+      {
+        "from": [
+          -17.4677,
+          14.7167
+        ],
+        "to": [
+          35.5018,
+          33.8938
+        ],
+        "type": "production",
+        "contribution_id": "con_024"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "evt_034",
+        "work_id": "wrk_g05",
+        "stage": "concept",
+        "date": "2025-01-21",
+        "city": "Beirut",
+        "lat": 33.8938,
+        "lng": 35.5018,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_035",
+        "work_id": "wrk_g05",
+        "stage": "pattern_licensed",
+        "date": "2025-02-19",
+        "city": "Beirut",
+        "lat": 33.8938,
+        "lng": 35.5018,
+        "contribution_id": "con_021",
+        "media": null
+      },
+      {
+        "id": "evt_036",
+        "work_id": "wrk_g05",
+        "stage": "sample",
+        "date": "2025-03-29",
+        "city": "Beirut",
+        "lat": 33.8938,
+        "lng": 35.5018,
+        "contribution_id": null,
+        "media": "/media/timeline/wrk_g05_sample.jpg"
+      },
+      {
+        "id": "evt_037",
+        "work_id": "wrk_g05",
+        "stage": "campaign_shoot",
+        "date": "2025-04-10",
+        "city": "Shanghai",
+        "lat": 31.2304,
+        "lng": 121.4737,
+        "contribution_id": "con_023",
+        "media": "/media/timeline/wrk_g05_campaign_shoot.jpg"
+      },
+      {
+        "id": "evt_038",
+        "work_id": "wrk_g05",
+        "stage": "preorder_open",
+        "date": "2025-04-24",
+        "city": "Beirut",
+        "lat": 33.8938,
+        "lng": 35.5018,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_039",
+        "work_id": "wrk_g05",
+        "stage": "funded",
+        "date": "2025-05-30",
+        "city": "Beirut",
+        "lat": 33.8938,
+        "lng": 35.5018,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_040",
+        "work_id": "wrk_g05",
+        "stage": "production",
+        "date": "2025-07-08",
+        "city": "Dakar",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "contribution_id": "con_024",
+        "media": "/media/timeline/wrk_g05_production.jpg"
+      },
+      {
+        "id": "evt_041",
+        "work_id": "wrk_g05",
+        "stage": "shipped",
+        "date": "2025-07-27",
+        "city": "Dakar",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "contribution_id": "con_024",
+        "media": null
+      }
+    ],
+    "derivatives": []
+  },
+  "wrk_g06": {
+    "work_id": "wrk_g06",
+    "nodes": [
+      {
+        "contribution_id": "con_025",
+        "artist_id": "art_007",
+        "name": "Zanele Mokoena",
+        "role": "designer",
+        "lat": -26.2041,
+        "lng": 28.0473,
+        "split_pct": 55,
+        "source_work_id": null
+      },
+      {
+        "contribution_id": "con_026",
+        "artist_id": "art_009",
+        "name": "Diego Salazar",
+        "role": "technique",
+        "lat": 17.0732,
+        "lng": -96.7266,
+        "split_pct": 20,
+        "source_work_id": "wrk_p06"
+      },
+      {
+        "influence_id": "inf_005",
+        "name": "Zapotec cochineal dyeing",
+        "role": "influence",
+        "lat": 17.029,
+        "lng": -96.52,
+        "era": "pre-Hispanic",
+        "place": "Teotitlán del Valle"
+      },
+      {
+        "contribution_id": "con_027",
+        "artist_id": "art_016",
+        "name": "Callum Fraser",
+        "role": "photography",
+        "lat": 55.8642,
+        "lng": -4.2518,
+        "split_pct": 8,
+        "source_work_id": "wrk_ph3"
+      },
+      {
+        "contribution_id": "con_028",
+        "artist_id": "art_019",
+        "name": "Fatou Diallo",
+        "role": "production",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "split_pct": 17,
+        "source_work_id": null
+      },
+      {
+        "influence_id": "inf_010",
+        "name": "Security uniform surplus",
+        "role": "influence",
+        "lat": -26.205,
+        "lng": 28.04,
+        "era": "2010s",
+        "place": "Johannesburg CBD"
+      }
+    ],
+    "arcs": [
+      {
+        "from": [
+          28.0473,
+          -26.2041
+        ],
+        "to": [
+          28.0473,
+          -26.2041
+        ],
+        "type": "designer",
+        "contribution_id": "con_025"
+      },
+      {
+        "from": [
+          -96.7266,
+          17.0732
+        ],
+        "to": [
+          28.0473,
+          -26.2041
+        ],
+        "type": "technique",
+        "contribution_id": "con_026"
+      },
+      {
+        "from": [
+          -96.52,
+          17.029
+        ],
+        "to": [
+          -96.7266,
+          17.0732
+        ],
+        "type": "influence",
+        "influence_id": "inf_005"
+      },
+      {
+        "from": [
+          -4.2518,
+          55.8642
+        ],
+        "to": [
+          28.0473,
+          -26.2041
+        ],
+        "type": "photography",
+        "contribution_id": "con_027"
+      },
+      {
+        "from": [
+          -17.4677,
+          14.7167
+        ],
+        "to": [
+          28.0473,
+          -26.2041
+        ],
+        "type": "production",
+        "contribution_id": "con_028"
+      },
+      {
+        "from": [
+          28.04,
+          -26.205
+        ],
+        "to": [
+          28.0473,
+          -26.2041
+        ],
+        "type": "influence",
+        "influence_id": "inf_010"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "evt_042",
+        "work_id": "wrk_g06",
+        "stage": "concept",
+        "date": "2025-07-16",
+        "city": "Johannesburg",
+        "lat": -26.2041,
+        "lng": 28.0473,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_043",
+        "work_id": "wrk_g06",
+        "stage": "pattern_licensed",
+        "date": "2025-08-12",
+        "city": "Oaxaca",
+        "lat": 17.0732,
+        "lng": -96.7266,
+        "contribution_id": "con_026",
+        "media": null
+      },
+      {
+        "id": "evt_044",
+        "work_id": "wrk_g06",
+        "stage": "sample",
+        "date": "2025-08-30",
+        "city": "Johannesburg",
+        "lat": -26.2041,
+        "lng": 28.0473,
+        "contribution_id": null,
+        "media": "/media/timeline/wrk_g06_sample.jpg"
+      },
+      {
+        "id": "evt_045",
+        "work_id": "wrk_g06",
+        "stage": "campaign_shoot",
+        "date": "2025-10-08",
+        "city": "Glasgow",
+        "lat": 55.8642,
+        "lng": -4.2518,
+        "contribution_id": "con_027",
+        "media": "/media/timeline/wrk_g06_campaign_shoot.jpg"
+      },
+      {
+        "id": "evt_046",
+        "work_id": "wrk_g06",
+        "stage": "preorder_open",
+        "date": "2025-11-01",
+        "city": "Johannesburg",
+        "lat": -26.2041,
+        "lng": 28.0473,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_047",
+        "work_id": "wrk_g06",
+        "stage": "funded",
+        "date": "2025-12-11",
+        "city": "Johannesburg",
+        "lat": -26.2041,
+        "lng": 28.0473,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_048",
+        "work_id": "wrk_g06",
+        "stage": "production",
+        "date": "2025-12-24",
+        "city": "Dakar",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "contribution_id": "con_028",
+        "media": "/media/timeline/wrk_g06_production.jpg"
+      },
+      {
+        "id": "evt_049",
+        "work_id": "wrk_g06",
+        "stage": "shipped",
+        "date": "2026-01-10",
+        "city": "Dakar",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "contribution_id": "con_028",
+        "media": null
+      }
+    ],
+    "derivatives": []
+  },
+  "wrk_g07": {
+    "work_id": "wrk_g07",
+    "nodes": [
+      {
+        "contribution_id": "con_029",
+        "artist_id": "art_011",
+        "name": "Oluwaseun Adeyemi",
+        "role": "designer",
+        "lat": 6.5244,
+        "lng": 3.3792,
+        "split_pct": 58,
+        "source_work_id": null
+      },
+      {
+        "contribution_id": "con_030",
+        "artist_id": "art_011",
+        "name": "Oluwaseun Adeyemi",
+        "role": "technique",
+        "lat": 6.5244,
+        "lng": 3.3792,
+        "split_pct": 12,
+        "source_work_id": "wrk_p07"
+      },
+      {
+        "influence_id": "inf_006",
+        "name": "Yoruba adire eleko",
+        "role": "influence",
+        "lat": 7.1475,
+        "lng": 3.3619,
+        "era": "early 1900s",
+        "place": "Abeokuta, Ogun"
+      },
+      {
+        "contribution_id": "con_031",
+        "artist_id": "art_003",
+        "name": "Ximena Ortiz Rueda",
+        "role": "photography",
+        "lat": 19.4326,
+        "lng": -99.1332,
+        "split_pct": 8,
+        "source_work_id": "wrk_ph1"
+      },
+      {
+        "influence_id": "inf_009",
+        "name": "Tianguis CRT stalls",
+        "role": "influence",
+        "lat": 19.444,
+        "lng": -99.125,
+        "era": "2000s",
+        "place": "Mexico City, Tepito"
+      },
+      {
+        "contribution_id": "con_032",
+        "artist_id": "art_013",
+        "name": "Rafael Nunes",
+        "role": "soundtrack",
+        "lat": -23.5505,
+        "lng": -46.6333,
+        "split_pct": 4,
+        "source_work_id": "wrk_t02"
+      },
+      {
+        "influence_id": "inf_011",
+        "name": "Baile funk",
+        "role": "influence",
+        "lat": -22.86,
+        "lng": -43.27,
+        "era": "2000s",
+        "place": "Rio de Janeiro, Complexo do Alemão"
+      },
+      {
+        "contribution_id": "con_033",
+        "artist_id": "art_019",
+        "name": "Fatou Diallo",
+        "role": "production",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "split_pct": 18,
+        "source_work_id": null
+      }
+    ],
+    "arcs": [
+      {
+        "from": [
+          3.3792,
+          6.5244
+        ],
+        "to": [
+          3.3792,
+          6.5244
+        ],
+        "type": "designer",
+        "contribution_id": "con_029"
+      },
+      {
+        "from": [
+          3.3792,
+          6.5244
+        ],
+        "to": [
+          3.3792,
+          6.5244
+        ],
+        "type": "technique",
+        "contribution_id": "con_030"
+      },
+      {
+        "from": [
+          3.3619,
+          7.1475
+        ],
+        "to": [
+          3.3792,
+          6.5244
+        ],
+        "type": "influence",
+        "influence_id": "inf_006"
+      },
+      {
+        "from": [
+          -99.1332,
+          19.4326
+        ],
+        "to": [
+          3.3792,
+          6.5244
+        ],
+        "type": "photography",
+        "contribution_id": "con_031"
+      },
+      {
+        "from": [
+          -99.125,
+          19.444
+        ],
+        "to": [
+          -99.1332,
+          19.4326
+        ],
+        "type": "influence",
+        "influence_id": "inf_009"
+      },
+      {
+        "from": [
+          -46.6333,
+          -23.5505
+        ],
+        "to": [
+          3.3792,
+          6.5244
+        ],
+        "type": "soundtrack",
+        "contribution_id": "con_032"
+      },
+      {
+        "from": [
+          -43.27,
+          -22.86
+        ],
+        "to": [
+          -46.6333,
+          -23.5505
+        ],
+        "type": "influence",
+        "influence_id": "inf_011"
+      },
+      {
+        "from": [
+          -17.4677,
+          14.7167
+        ],
+        "to": [
+          3.3792,
+          6.5244
+        ],
+        "type": "production",
+        "contribution_id": "con_033"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "evt_050",
+        "work_id": "wrk_g07",
+        "stage": "concept",
+        "date": "2025-09-13",
+        "city": "Lagos",
+        "lat": 6.5244,
+        "lng": 3.3792,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_051",
+        "work_id": "wrk_g07",
+        "stage": "pattern_licensed",
+        "date": "2025-10-03",
+        "city": "Lagos",
+        "lat": 6.5244,
+        "lng": 3.3792,
+        "contribution_id": "con_030",
+        "media": null
+      },
+      {
+        "id": "evt_052",
+        "work_id": "wrk_g07",
+        "stage": "sample",
+        "date": "2025-11-09",
+        "city": "Lagos",
+        "lat": 6.5244,
+        "lng": 3.3792,
+        "contribution_id": null,
+        "media": "/media/timeline/wrk_g07_sample.jpg"
+      },
+      {
+        "id": "evt_053",
+        "work_id": "wrk_g07",
+        "stage": "campaign_shoot",
+        "date": "2025-12-16",
+        "city": "Mexico City",
+        "lat": 19.4326,
+        "lng": -99.1332,
+        "contribution_id": "con_031",
+        "media": "/media/timeline/wrk_g07_campaign_shoot.jpg"
+      },
+      {
+        "id": "evt_054",
+        "work_id": "wrk_g07",
+        "stage": "preorder_open",
+        "date": "2026-01-11",
+        "city": "Lagos",
+        "lat": 6.5244,
+        "lng": 3.3792,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_055",
+        "work_id": "wrk_g07",
+        "stage": "funded",
+        "date": "2026-02-01",
+        "city": "Lagos",
+        "lat": 6.5244,
+        "lng": 3.3792,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_056",
+        "work_id": "wrk_g07",
+        "stage": "production",
+        "date": "2026-02-26",
+        "city": "Dakar",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "contribution_id": "con_033",
+        "media": "/media/timeline/wrk_g07_production.jpg"
+      },
+      {
+        "id": "evt_057",
+        "work_id": "wrk_g07",
+        "stage": "shipped",
+        "date": "2026-04-01",
+        "city": "Dakar",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "contribution_id": "con_033",
+        "media": null
+      }
+    ],
+    "derivatives": []
+  },
+  "wrk_g08": {
+    "work_id": "wrk_g08",
+    "nodes": [
+      {
+        "contribution_id": "con_034",
+        "artist_id": "art_018",
+        "name": "Dae-Jung Park",
+        "role": "designer",
+        "lat": 37.5665,
+        "lng": 126.978,
+        "split_pct": 50,
+        "source_work_id": null
+      },
+      {
+        "contribution_id": "con_035",
+        "artist_id": "art_014",
+        "name": "Aiko Tanaka",
+        "role": "technique",
+        "lat": 35.0116,
+        "lng": 135.7681,
+        "split_pct": 24,
+        "source_work_id": "wrk_p08"
+      },
+      {
+        "influence_id": "inf_007",
+        "name": "Awa aizome indigo",
+        "role": "influence",
+        "lat": 34.0658,
+        "lng": 134.5593,
+        "era": "Edo period",
+        "place": "Tokushima"
+      },
+      {
+        "contribution_id": "con_036",
+        "artist_id": "art_010",
+        "name": "Mei-Lin Zhao",
+        "role": "photography",
+        "lat": 31.2304,
+        "lng": 121.4737,
+        "split_pct": 8,
+        "source_work_id": "wrk_ph2"
+      },
+      {
+        "contribution_id": "con_037",
+        "artist_id": "art_004",
+        "name": "Kenji Morimoto",
+        "role": "soundtrack",
+        "lat": 35.6762,
+        "lng": 139.6503,
+        "split_pct": 4,
+        "source_work_id": "wrk_t01"
+      },
+      {
+        "contribution_id": "con_038",
+        "artist_id": "art_019",
+        "name": "Fatou Diallo",
+        "role": "production",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "split_pct": 14,
+        "source_work_id": null
+      }
+    ],
+    "arcs": [
+      {
+        "from": [
+          126.978,
+          37.5665
+        ],
+        "to": [
+          126.978,
+          37.5665
+        ],
+        "type": "designer",
+        "contribution_id": "con_034"
+      },
+      {
+        "from": [
+          135.7681,
+          35.0116
+        ],
+        "to": [
+          126.978,
+          37.5665
+        ],
+        "type": "technique",
+        "contribution_id": "con_035"
+      },
+      {
+        "from": [
+          134.5593,
+          34.0658
+        ],
+        "to": [
+          135.7681,
+          35.0116
+        ],
+        "type": "influence",
+        "influence_id": "inf_007"
+      },
+      {
+        "from": [
+          121.4737,
+          31.2304
+        ],
+        "to": [
+          126.978,
+          37.5665
+        ],
+        "type": "photography",
+        "contribution_id": "con_036"
+      },
+      {
+        "from": [
+          139.6503,
+          35.6762
+        ],
+        "to": [
+          126.978,
+          37.5665
+        ],
+        "type": "soundtrack",
+        "contribution_id": "con_037"
+      },
+      {
+        "from": [
+          -17.4677,
+          14.7167
+        ],
+        "to": [
+          126.978,
+          37.5665
+        ],
+        "type": "production",
+        "contribution_id": "con_038"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "evt_058",
+        "work_id": "wrk_g08",
+        "stage": "concept",
+        "date": "2025-12-05",
+        "city": "Seoul",
+        "lat": 37.5665,
+        "lng": 126.978,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_059",
+        "work_id": "wrk_g08",
+        "stage": "pattern_licensed",
+        "date": "2025-12-23",
+        "city": "Kyoto",
+        "lat": 35.0116,
+        "lng": 135.7681,
+        "contribution_id": "con_035",
+        "media": null
+      },
+      {
+        "id": "evt_060",
+        "work_id": "wrk_g08",
+        "stage": "sample",
+        "date": "2026-01-13",
+        "city": "Seoul",
+        "lat": 37.5665,
+        "lng": 126.978,
+        "contribution_id": null,
+        "media": "/media/timeline/wrk_g08_sample.jpg"
+      },
+      {
+        "id": "evt_061",
+        "work_id": "wrk_g08",
+        "stage": "campaign_shoot",
+        "date": "2026-01-31",
+        "city": "Shanghai",
+        "lat": 31.2304,
+        "lng": 121.4737,
+        "contribution_id": "con_036",
+        "media": "/media/timeline/wrk_g08_campaign_shoot.jpg"
+      },
+      {
+        "id": "evt_062",
+        "work_id": "wrk_g08",
+        "stage": "preorder_open",
+        "date": "2026-02-13",
+        "city": "Seoul",
+        "lat": 37.5665,
+        "lng": 126.978,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_063",
+        "work_id": "wrk_g08",
+        "stage": "funded",
+        "date": "2026-03-15",
+        "city": "Seoul",
+        "lat": 37.5665,
+        "lng": 126.978,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_064",
+        "work_id": "wrk_g08",
+        "stage": "production",
+        "date": "2026-04-19",
+        "city": "Dakar",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "contribution_id": "con_038",
+        "media": "/media/timeline/wrk_g08_production.jpg"
+      },
+      {
+        "id": "evt_065",
+        "work_id": "wrk_g08",
+        "stage": "shipped",
+        "date": "2026-05-18",
+        "city": "Dakar",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "contribution_id": "con_038",
+        "media": null
+      }
+    ],
+    "derivatives": []
+  },
+  "wrk_g09": {
+    "work_id": "wrk_g09",
+    "nodes": [
+      {
+        "contribution_id": "con_039",
+        "artist_id": "art_007",
+        "name": "Zanele Mokoena",
+        "role": "designer",
+        "lat": -26.2041,
+        "lng": 28.0473,
+        "split_pct": 45,
+        "source_work_id": null
+      },
+      {
+        "contribution_id": "con_040",
+        "artist_id": "art_002",
+        "name": "Lukas Brandt",
+        "role": "source_design",
+        "lat": 52.52,
+        "lng": 13.405,
+        "split_pct": 15,
+        "source_work_id": "wrk_g01"
+      },
+      {
+        "contribution_id": "con_001",
+        "artist_id": "art_002",
+        "name": "Lukas Brandt",
+        "role": "designer",
+        "lat": 52.52,
+        "lng": 13.405,
+        "split_pct": 50,
+        "source_work_id": null
+      },
+      {
+        "contribution_id": "con_002",
+        "artist_id": "art_001",
+        "name": "Abena Owusu-Ansah",
+        "role": "pattern",
+        "lat": 6.6885,
+        "lng": -1.6244,
+        "split_pct": 20,
+        "source_work_id": "wrk_p01"
+      },
+      {
+        "influence_id": "inf_001",
+        "name": "Asante kente strip weaving",
+        "role": "influence",
+        "lat": 6.77,
+        "lng": -1.526,
+        "era": "17th c.–present",
+        "place": "Bonwire, Ashanti"
+      },
+      {
+        "contribution_id": "con_003",
+        "artist_id": "art_003",
+        "name": "Ximena Ortiz Rueda",
+        "role": "photography",
+        "lat": 19.4326,
+        "lng": -99.1332,
+        "split_pct": 8,
+        "source_work_id": "wrk_ph1"
+      },
+      {
+        "influence_id": "inf_009",
+        "name": "Tianguis CRT stalls",
+        "role": "influence",
+        "lat": 19.444,
+        "lng": -99.125,
+        "era": "2000s",
+        "place": "Mexico City, Tepito"
+      },
+      {
+        "contribution_id": "con_004",
+        "artist_id": "art_004",
+        "name": "Kenji Morimoto",
+        "role": "soundtrack",
+        "lat": 35.6762,
+        "lng": 139.6503,
+        "split_pct": 4,
+        "source_work_id": "wrk_t01"
+      },
+      {
+        "contribution_id": "con_005",
+        "artist_id": "art_019",
+        "name": "Fatou Diallo",
+        "role": "production",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "split_pct": 18,
+        "source_work_id": null
+      },
+      {
+        "influence_id": "inf_008",
+        "name": "Techno-utilitarian clubwear",
+        "role": "influence",
+        "lat": 52.499,
+        "lng": 13.403,
+        "era": "1990s",
+        "place": "Berlin, Kreuzberg"
+      },
+      {
+        "contribution_id": "con_041",
+        "artist_id": "art_001",
+        "name": "Abena Owusu-Ansah",
+        "role": "pattern",
+        "lat": 6.6885,
+        "lng": -1.6244,
+        "split_pct": 12,
+        "source_work_id": "wrk_p01"
+      },
+      {
+        "influence_id": "inf_001",
+        "name": "Asante kente strip weaving",
+        "role": "influence",
+        "lat": 6.77,
+        "lng": -1.526,
+        "era": "17th c.–present",
+        "place": "Bonwire, Ashanti"
+      },
+      {
+        "contribution_id": "con_042",
+        "artist_id": "art_016",
+        "name": "Callum Fraser",
+        "role": "photography",
+        "lat": 55.8642,
+        "lng": -4.2518,
+        "split_pct": 8,
+        "source_work_id": "wrk_ph3"
+      },
+      {
+        "contribution_id": "con_043",
+        "artist_id": "art_019",
+        "name": "Fatou Diallo",
+        "role": "production",
+        "lat": 14.7167,
+        "lng": -17.4677,
+        "split_pct": 20,
+        "source_work_id": null
+      }
+    ],
+    "arcs": [
+      {
+        "from": [
+          28.0473,
+          -26.2041
+        ],
+        "to": [
+          28.0473,
+          -26.2041
+        ],
+        "type": "designer",
+        "contribution_id": "con_039"
+      },
+      {
+        "from": [
+          13.405,
+          52.52
+        ],
+        "to": [
+          28.0473,
+          -26.2041
+        ],
+        "type": "source_design",
+        "contribution_id": "con_040"
+      },
+      {
+        "from": [
+          13.405,
+          52.52
+        ],
+        "to": [
+          13.405,
+          52.52
+        ],
+        "type": "designer",
+        "contribution_id": "con_001"
+      },
+      {
+        "from": [
+          -1.6244,
+          6.6885
+        ],
+        "to": [
+          13.405,
+          52.52
+        ],
+        "type": "pattern",
+        "contribution_id": "con_002"
+      },
+      {
+        "from": [
+          -1.526,
+          6.77
+        ],
+        "to": [
+          -1.6244,
+          6.6885
+        ],
+        "type": "influence",
+        "influence_id": "inf_001"
+      },
+      {
+        "from": [
+          -99.1332,
+          19.4326
+        ],
+        "to": [
+          13.405,
+          52.52
+        ],
+        "type": "photography",
+        "contribution_id": "con_003"
+      },
+      {
+        "from": [
+          -99.125,
+          19.444
+        ],
+        "to": [
+          -99.1332,
+          19.4326
+        ],
+        "type": "influence",
+        "influence_id": "inf_009"
+      },
+      {
+        "from": [
+          139.6503,
+          35.6762
+        ],
+        "to": [
+          13.405,
+          52.52
+        ],
+        "type": "soundtrack",
+        "contribution_id": "con_004"
+      },
+      {
+        "from": [
+          -17.4677,
+          14.7167
+        ],
+        "to": [
+          13.405,
+          52.52
+        ],
+        "type": "production",
+        "contribution_id": "con_005"
+      },
+      {
+        "from": [
+          13.403,
+          52.499
+        ],
+        "to": [
+          13.405,
+          52.52
+        ],
+        "type": "influence",
+        "influence_id": "inf_008"
+      },
+      {
+        "from": [
+          -1.6244,
+          6.6885
+        ],
+        "to": [
+          28.0473,
+          -26.2041
+        ],
+        "type": "pattern",
+        "contribution_id": "con_041"
+      },
+      {
+        "from": [
+          -1.526,
+          6.77
+        ],
+        "to": [
+          -1.6244,
+          6.6885
+        ],
+        "type": "influence",
+        "influence_id": "inf_001"
+      },
+      {
+        "from": [
+          -4.2518,
+          55.8642
+        ],
+        "to": [
+          28.0473,
+          -26.2041
+        ],
+        "type": "photography",
+        "contribution_id": "con_042"
+      },
+      {
+        "from": [
+          -17.4677,
+          14.7167
+        ],
+        "to": [
+          28.0473,
+          -26.2041
+        ],
+        "type": "production",
+        "contribution_id": "con_043"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "evt_066",
+        "work_id": "wrk_g09",
+        "stage": "concept",
+        "date": "2025-11-02",
+        "city": "Johannesburg",
+        "lat": -26.2041,
+        "lng": 28.0473,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_067",
+        "work_id": "wrk_g09",
+        "stage": "pattern_licensed",
+        "date": "2025-11-15",
+        "city": "Berlin",
+        "lat": 52.52,
+        "lng": 13.405,
+        "contribution_id": "con_040",
+        "media": null
+      },
+      {
+        "id": "evt_068",
+        "work_id": "wrk_g09",
+        "stage": "sample",
+        "date": "2025-12-15",
+        "city": "Johannesburg",
+        "lat": -26.2041,
+        "lng": 28.0473,
+        "contribution_id": null,
+        "media": "/media/timeline/wrk_g09_sample.jpg"
+      },
+      {
+        "id": "evt_069",
+        "work_id": "wrk_g09",
+        "stage": "campaign_shoot",
+        "date": "2026-01-11",
+        "city": "Glasgow",
+        "lat": 55.8642,
+        "lng": -4.2518,
+        "contribution_id": "con_042",
+        "media": "/media/timeline/wrk_g09_campaign_shoot.jpg"
+      },
+      {
+        "id": "evt_070",
+        "work_id": "wrk_g09",
+        "stage": "preorder_open",
+        "date": "2026-02-08",
+        "city": "Johannesburg",
+        "lat": -26.2041,
+        "lng": 28.0473,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_071",
+        "work_id": "wrk_g09",
+        "stage": "funded",
+        "date": "2026-03-19",
+        "city": "Johannesburg",
+        "lat": -26.2041,
+        "lng": 28.0473,
+        "contribution_id": null,
+        "media": null
+      }
+    ],
+    "derivatives": []
+  },
+  "wrk_g10": {
+    "work_id": "wrk_g10",
+    "nodes": [
+      {
+        "contribution_id": "con_044",
+        "artist_id": "art_006",
+        "name": "Tomás Albuquerque",
+        "role": "maker",
+        "lat": 41.1579,
+        "lng": -8.6291,
+        "split_pct": 70,
+        "source_work_id": null
+      },
+      {
+        "contribution_id": "con_045",
+        "artist_id": "art_001",
+        "name": "Abena Owusu-Ansah",
+        "role": "pattern",
+        "lat": 6.6885,
+        "lng": -1.6244,
+        "split_pct": 15,
+        "source_work_id": "wrk_p01"
+      },
+      {
+        "influence_id": "inf_001",
+        "name": "Asante kente strip weaving",
+        "role": "influence",
+        "lat": 6.77,
+        "lng": -1.526,
+        "era": "17th c.–present",
+        "place": "Bonwire, Ashanti"
+      },
+      {
+        "contribution_id": "con_046",
+        "artist_id": "art_003",
+        "name": "Ximena Ortiz Rueda",
+        "role": "photography",
+        "lat": 19.4326,
+        "lng": -99.1332,
+        "split_pct": 8,
+        "source_work_id": "wrk_ph1"
+      },
+      {
+        "influence_id": "inf_009",
+        "name": "Tianguis CRT stalls",
+        "role": "influence",
+        "lat": 19.444,
+        "lng": -99.125,
+        "era": "2000s",
+        "place": "Mexico City, Tepito"
+      },
+      {
+        "contribution_id": "con_047",
+        "artist_id": "art_020",
+        "name": "Elias Weber",
+        "role": "styling",
+        "lat": 48.2082,
+        "lng": 16.3738,
+        "split_pct": 7,
+        "source_work_id": null
+      }
+    ],
+    "arcs": [
+      {
+        "from": [
+          -8.6291,
+          41.1579
+        ],
+        "to": [
+          -8.6291,
+          41.1579
+        ],
+        "type": "maker",
+        "contribution_id": "con_044"
+      },
+      {
+        "from": [
+          -1.6244,
+          6.6885
+        ],
+        "to": [
+          -8.6291,
+          41.1579
+        ],
+        "type": "pattern",
+        "contribution_id": "con_045"
+      },
+      {
+        "from": [
+          -1.526,
+          6.77
+        ],
+        "to": [
+          -1.6244,
+          6.6885
+        ],
+        "type": "influence",
+        "influence_id": "inf_001"
+      },
+      {
+        "from": [
+          -99.1332,
+          19.4326
+        ],
+        "to": [
+          -8.6291,
+          41.1579
+        ],
+        "type": "photography",
+        "contribution_id": "con_046"
+      },
+      {
+        "from": [
+          -99.125,
+          19.444
+        ],
+        "to": [
+          -99.1332,
+          19.4326
+        ],
+        "type": "influence",
+        "influence_id": "inf_009"
+      },
+      {
+        "from": [
+          16.3738,
+          48.2082
+        ],
+        "to": [
+          -8.6291,
+          41.1579
+        ],
+        "type": "styling",
+        "contribution_id": "con_047"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "evt_072",
+        "work_id": "wrk_g10",
+        "stage": "concept",
+        "date": "2025-03-02",
+        "city": "Porto",
+        "lat": 41.1579,
+        "lng": -8.6291,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_073",
+        "work_id": "wrk_g10",
+        "stage": "pattern_licensed",
+        "date": "2025-03-30",
+        "city": "Kumasi",
+        "lat": 6.6885,
+        "lng": -1.6244,
+        "contribution_id": "con_045",
+        "media": null
+      },
+      {
+        "id": "evt_074",
+        "work_id": "wrk_g10",
+        "stage": "sample",
+        "date": "2025-04-13",
+        "city": "Porto",
+        "lat": 41.1579,
+        "lng": -8.6291,
+        "contribution_id": null,
+        "media": "/media/timeline/wrk_g10_sample.jpg"
+      },
+      {
+        "id": "evt_075",
+        "work_id": "wrk_g10",
+        "stage": "campaign_shoot",
+        "date": "2025-05-22",
+        "city": "Mexico City",
+        "lat": 19.4326,
+        "lng": -99.1332,
+        "contribution_id": "con_046",
+        "media": "/media/timeline/wrk_g10_campaign_shoot.jpg"
+      },
+      {
+        "id": "evt_076",
+        "work_id": "wrk_g10",
+        "stage": "preorder_open",
+        "date": "2025-06-08",
+        "city": "Porto",
+        "lat": 41.1579,
+        "lng": -8.6291,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_077",
+        "work_id": "wrk_g10",
+        "stage": "funded",
+        "date": "2025-06-22",
+        "city": "Porto",
+        "lat": 41.1579,
+        "lng": -8.6291,
+        "contribution_id": null,
+        "media": null
+      },
+      {
+        "id": "evt_078",
+        "work_id": "wrk_g10",
+        "stage": "production",
+        "date": "2025-07-23",
+        "city": "Porto",
+        "lat": 41.1579,
+        "lng": -8.6291,
+        "contribution_id": null,
+        "media": "/media/timeline/wrk_g10_production.jpg"
+      },
+      {
+        "id": "evt_079",
+        "work_id": "wrk_g10",
+        "stage": "shipped",
+        "date": "2025-08-06",
+        "city": "Porto",
+        "lat": 41.1579,
+        "lng": -8.6291,
+        "contribution_id": null,
+        "media": null
+      }
+    ],
+    "derivatives": []
+  }
+}

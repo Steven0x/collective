@@ -1,0 +1,472 @@
+[
+  {
+    "id": "con_001",
+    "work_id": "wrk_g01",
+    "contributor_id": "art_002",
+    "role": "designer",
+    "source_work_id": null,
+    "split_pct": 50,
+    "status": "confirmed",
+    "confirmed_at": "2025-11-08"
+  },
+  {
+    "id": "con_002",
+    "work_id": "wrk_g01",
+    "contributor_id": "art_001",
+    "role": "pattern",
+    "source_work_id": "wrk_p01",
+    "split_pct": 20,
+    "status": "confirmed",
+    "confirmed_at": "2025-03-08"
+  },
+  {
+    "id": "con_003",
+    "work_id": "wrk_g01",
+    "contributor_id": "art_003",
+    "role": "photography",
+    "source_work_id": "wrk_ph1",
+    "split_pct": 8,
+    "status": "confirmed",
+    "confirmed_at": "2025-08-13"
+  },
+  {
+    "id": "con_004",
+    "work_id": "wrk_g01",
+    "contributor_id": "art_004",
+    "role": "soundtrack",
+    "source_work_id": "wrk_t01",
+    "split_pct": 4,
+    "status": "confirmed",
+    "confirmed_at": "2025-06-19"
+  },
+  {
+    "id": "con_005",
+    "work_id": "wrk_g01",
+    "contributor_id": "art_019",
+    "role": "production",
+    "source_work_id": null,
+    "split_pct": 18,
+    "status": "confirmed",
+    "confirmed_at": "2025-08-07"
+  },
+  {
+    "id": "con_006",
+    "work_id": "wrk_g02",
+    "contributor_id": "art_008",
+    "role": "designer",
+    "source_work_id": null,
+    "split_pct": 55,
+    "status": "confirmed",
+    "confirmed_at": "2025-09-21"
+  },
+  {
+    "id": "con_007",
+    "work_id": "wrk_g02",
+    "contributor_id": "art_005",
+    "role": "pattern",
+    "source_work_id": "wrk_p02",
+    "split_pct": 20,
+    "status": "confirmed",
+    "confirmed_at": "2025-07-05"
+  },
+  {
+    "id": "con_008",
+    "work_id": "wrk_g02",
+    "contributor_id": "art_010",
+    "role": "photography",
+    "source_work_id": "wrk_ph2",
+    "split_pct": 8,
+    "status": "confirmed",
+    "confirmed_at": "2025-11-18"
+  },
+  {
+    "id": "con_009",
+    "work_id": "wrk_g02",
+    "contributor_id": "art_019",
+    "role": "production",
+    "source_work_id": null,
+    "split_pct": 17,
+    "status": "confirmed",
+    "confirmed_at": "2025-12-14"
+  },
+  {
+    "id": "con_010",
+    "work_id": "wrk_g03",
+    "contributor_id": "art_018",
+    "role": "designer",
+    "source_work_id": null,
+    "split_pct": 50,
+    "status": "confirmed",
+    "confirmed_at": "2025-09-12"
+  },
+  {
+    "id": "con_011",
+    "work_id": "wrk_g03",
+    "contributor_id": "art_012",
+    "role": "pattern",
+    "source_work_id": "wrk_p03",
+    "split_pct": 22,
+    "status": "confirmed",
+    "confirmed_at": "2025-05-17"
+  },
+  {
+    "id": "con_012",
+    "work_id": "wrk_g03",
+    "contributor_id": "art_016",
+    "role": "photography",
+    "source_work_id": "wrk_ph3",
+    "split_pct": 6,
+    "status": "confirmed",
+    "confirmed_at": "2025-03-28"
+  },
+  {
+    "id": "con_013",
+    "work_id": "wrk_g03",
+    "contributor_id": "art_016",
+    "role": "soundtrack",
+    "source_work_id": "wrk_t03",
+    "split_pct": 4,
+    "status": "confirmed",
+    "confirmed_at": "2025-05-26"
+  },
+  {
+    "id": "con_014",
+    "work_id": "wrk_g03",
+    "contributor_id": "art_019",
+    "role": "production",
+    "source_work_id": null,
+    "split_pct": 18,
+    "status": "confirmed",
+    "confirmed_at": "2025-12-03"
+  },
+  {
+    "id": "con_015",
+    "work_id": "wrk_g04",
+    "contributor_id": "art_002",
+    "role": "designer",
+    "source_work_id": null,
+    "split_pct": 52,
+    "status": "confirmed",
+    "confirmed_at": "2025-12-15"
+  },
+  {
+    "id": "con_016",
+    "work_id": "wrk_g04",
+    "contributor_id": "art_017",
+    "role": "pattern",
+    "source_work_id": "wrk_p04",
+    "split_pct": 22,
+    "status": "confirmed",
+    "confirmed_at": "2025-11-28"
+  },
+  {
+    "id": "con_017",
+    "work_id": "wrk_g04",
+    "contributor_id": "art_003",
+    "role": "photography",
+    "source_work_id": "wrk_ph1",
+    "split_pct": 8,
+    "status": "confirmed",
+    "confirmed_at": "2025-04-22"
+  },
+  {
+    "id": "con_018",
+    "work_id": "wrk_g04",
+    "contributor_id": "art_013",
+    "role": "soundtrack",
+    "source_work_id": "wrk_t02",
+    "split_pct": 4,
+    "status": "confirmed",
+    "confirmed_at": "2025-07-25"
+  },
+  {
+    "id": "con_019",
+    "work_id": "wrk_g04",
+    "contributor_id": "art_019",
+    "role": "production",
+    "source_work_id": null,
+    "split_pct": 14,
+    "status": "confirmed",
+    "confirmed_at": "2025-04-10"
+  },
+  {
+    "id": "con_020",
+    "work_id": "wrk_g05",
+    "contributor_id": "art_015",
+    "role": "designer",
+    "source_work_id": null,
+    "split_pct": 60,
+    "status": "confirmed",
+    "confirmed_at": "2025-10-01"
+  },
+  {
+    "id": "con_021",
+    "work_id": "wrk_g05",
+    "contributor_id": "art_015",
+    "role": "pattern",
+    "source_work_id": "wrk_p05",
+    "split_pct": 10,
+    "status": "confirmed",
+    "confirmed_at": "2025-07-17"
+  },
+  {
+    "id": "con_022",
+    "work_id": "wrk_g05",
+    "contributor_id": "art_020",
+    "role": "styling",
+    "source_work_id": null,
+    "split_pct": 6,
+    "status": "confirmed",
+    "confirmed_at": "2025-11-04"
+  },
+  {
+    "id": "con_023",
+    "work_id": "wrk_g05",
+    "contributor_id": "art_010",
+    "role": "photography",
+    "source_work_id": "wrk_ph2",
+    "split_pct": 8,
+    "status": "confirmed",
+    "confirmed_at": "2025-07-27"
+  },
+  {
+    "id": "con_024",
+    "work_id": "wrk_g05",
+    "contributor_id": "art_019",
+    "role": "production",
+    "source_work_id": null,
+    "split_pct": 16,
+    "status": "confirmed",
+    "confirmed_at": "2025-12-07"
+  },
+  {
+    "id": "con_025",
+    "work_id": "wrk_g06",
+    "contributor_id": "art_007",
+    "role": "designer",
+    "source_work_id": null,
+    "split_pct": 55,
+    "status": "confirmed",
+    "confirmed_at": "2025-05-18"
+  },
+  {
+    "id": "con_026",
+    "work_id": "wrk_g06",
+    "contributor_id": "art_009",
+    "role": "technique",
+    "source_work_id": "wrk_p06",
+    "split_pct": 20,
+    "status": "confirmed",
+    "confirmed_at": "2025-11-01"
+  },
+  {
+    "id": "con_027",
+    "work_id": "wrk_g06",
+    "contributor_id": "art_016",
+    "role": "photography",
+    "source_work_id": "wrk_ph3",
+    "split_pct": 8,
+    "status": "confirmed",
+    "confirmed_at": "2025-10-01"
+  },
+  {
+    "id": "con_028",
+    "work_id": "wrk_g06",
+    "contributor_id": "art_019",
+    "role": "production",
+    "source_work_id": null,
+    "split_pct": 17,
+    "status": "confirmed",
+    "confirmed_at": "2025-08-27"
+  },
+  {
+    "id": "con_029",
+    "work_id": "wrk_g07",
+    "contributor_id": "art_011",
+    "role": "designer",
+    "source_work_id": null,
+    "split_pct": 58,
+    "status": "confirmed",
+    "confirmed_at": "2025-06-02"
+  },
+  {
+    "id": "con_030",
+    "work_id": "wrk_g07",
+    "contributor_id": "art_011",
+    "role": "technique",
+    "source_work_id": "wrk_p07",
+    "split_pct": 12,
+    "status": "confirmed",
+    "confirmed_at": "2025-12-03"
+  },
+  {
+    "id": "con_031",
+    "work_id": "wrk_g07",
+    "contributor_id": "art_003",
+    "role": "photography",
+    "source_work_id": "wrk_ph1",
+    "split_pct": 8,
+    "status": "confirmed",
+    "confirmed_at": "2025-10-27"
+  },
+  {
+    "id": "con_032",
+    "work_id": "wrk_g07",
+    "contributor_id": "art_013",
+    "role": "soundtrack",
+    "source_work_id": "wrk_t02",
+    "split_pct": 4,
+    "status": "pending",
+    "confirmed_at": "2025-11-25"
+  },
+  {
+    "id": "con_033",
+    "work_id": "wrk_g07",
+    "contributor_id": "art_019",
+    "role": "production",
+    "source_work_id": null,
+    "split_pct": 18,
+    "status": "confirmed",
+    "confirmed_at": "2025-10-18"
+  },
+  {
+    "id": "con_034",
+    "work_id": "wrk_g08",
+    "contributor_id": "art_018",
+    "role": "designer",
+    "source_work_id": null,
+    "split_pct": 50,
+    "status": "confirmed",
+    "confirmed_at": "2025-11-28"
+  },
+  {
+    "id": "con_035",
+    "work_id": "wrk_g08",
+    "contributor_id": "art_014",
+    "role": "technique",
+    "source_work_id": "wrk_p08",
+    "split_pct": 24,
+    "status": "confirmed",
+    "confirmed_at": "2025-06-18"
+  },
+  {
+    "id": "con_036",
+    "work_id": "wrk_g08",
+    "contributor_id": "art_010",
+    "role": "photography",
+    "source_work_id": "wrk_ph2",
+    "split_pct": 8,
+    "status": "confirmed",
+    "confirmed_at": "2025-06-23"
+  },
+  {
+    "id": "con_037",
+    "work_id": "wrk_g08",
+    "contributor_id": "art_004",
+    "role": "soundtrack",
+    "source_work_id": "wrk_t01",
+    "split_pct": 4,
+    "status": "confirmed",
+    "confirmed_at": "2025-08-15"
+  },
+  {
+    "id": "con_038",
+    "work_id": "wrk_g08",
+    "contributor_id": "art_019",
+    "role": "production",
+    "source_work_id": null,
+    "split_pct": 14,
+    "status": "confirmed",
+    "confirmed_at": "2025-10-04"
+  },
+  {
+    "id": "con_039",
+    "work_id": "wrk_g09",
+    "contributor_id": "art_007",
+    "role": "designer",
+    "source_work_id": null,
+    "split_pct": 45,
+    "status": "confirmed",
+    "confirmed_at": "2025-04-11"
+  },
+  {
+    "id": "con_040",
+    "work_id": "wrk_g09",
+    "contributor_id": "art_002",
+    "role": "source_design",
+    "source_work_id": "wrk_g01",
+    "split_pct": 15,
+    "status": "pending",
+    "confirmed_at": "2025-11-08"
+  },
+  {
+    "id": "con_041",
+    "work_id": "wrk_g09",
+    "contributor_id": "art_001",
+    "role": "pattern",
+    "source_work_id": "wrk_p01",
+    "split_pct": 12,
+    "status": "confirmed",
+    "confirmed_at": "2025-03-03"
+  },
+  {
+    "id": "con_042",
+    "work_id": "wrk_g09",
+    "contributor_id": "art_016",
+    "role": "photography",
+    "source_work_id": "wrk_ph3",
+    "split_pct": 8,
+    "status": "confirmed",
+    "confirmed_at": "2025-03-08"
+  },
+  {
+    "id": "con_043",
+    "work_id": "wrk_g09",
+    "contributor_id": "art_019",
+    "role": "production",
+    "source_work_id": null,
+    "split_pct": 20,
+    "status": "pending",
+    "confirmed_at": "2025-03-28"
+  },
+  {
+    "id": "con_044",
+    "work_id": "wrk_g10",
+    "contributor_id": "art_006",
+    "role": "maker",
+    "source_work_id": null,
+    "split_pct": 70,
+    "status": "confirmed",
+    "confirmed_at": "2025-11-08"
+  },
+  {
+    "id": "con_045",
+    "work_id": "wrk_g10",
+    "contributor_id": "art_001",
+    "role": "pattern",
+    "source_work_id": "wrk_p01",
+    "split_pct": 15,
+    "status": "confirmed",
+    "confirmed_at": "2025-10-07"
+  },
+  {
+    "id": "con_046",
+    "work_id": "wrk_g10",
+    "contributor_id": "art_003",
+    "role": "photography",
+    "source_work_id": "wrk_ph1",
+    "split_pct": 8,
+    "status": "confirmed",
+    "confirmed_at": "2025-12-19"
+  },
+  {
+    "id": "con_047",
+    "work_id": "wrk_g10",
+    "contributor_id": "art_020",
+    "role": "styling",
+    "source_work_id": null,
+    "split_pct": 7,
+    "status": "confirmed",
+    "confirmed_at": "2025-10-26"
+  }
+]

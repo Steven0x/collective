@@ -1,0 +1,74 @@
+[
+  {
+    "id": "lic_001",
+    "source_work_id": "wrk_p01",
+    "licensee_id": "art_002",
+    "scope": "single garment, 100 units",
+    "royalty_pct": 20,
+    "status": "signed",
+    "signed_at": "2025-04-02"
+  },
+  {
+    "id": "lic_002",
+    "source_work_id": "wrk_p02",
+    "licensee_id": "art_008",
+    "scope": "single garment, 100 units",
+    "royalty_pct": 20,
+    "status": "signed",
+    "signed_at": "2025-05-11"
+  },
+  {
+    "id": "lic_003",
+    "source_work_id": "wrk_p03",
+    "licensee_id": "art_018",
+    "scope": "single garment, 60 units",
+    "royalty_pct": 22,
+    "status": "signed",
+    "signed_at": "2025-06-30"
+  },
+  {
+    "id": "lic_004",
+    "source_work_id": "wrk_g01",
+    "licensee_id": "art_007",
+    "scope": "derivative upcycle, 40 units",
+    "royalty_pct": 15,
+    "status": "signed",
+    "signed_at": "2026-01-18"
+  },
+  {
+    "id": "lic_005",
+    "source_work_id": "wrk_p04",
+    "licensee_id": "art_002",
+    "scope": "single garment, 80 units",
+    "royalty_pct": 22,
+    "status": "signed",
+    "signed_at": "2025-11-05"
+  },
+  {
+    "id": "lic_006",
+    "source_work_id": "wrk_p01",
+    "licensee_id": "art_006",
+    "scope": "footwear detail, 50 pairs",
+    "royalty_pct": 15,
+    "status": "signed",
+    "signed_at": "2025-07-14"
+  },
+  {
+    "id": "lic_007",
+    "source_work_id": "wrk_p05",
+    "licensee_id": "art_018",
+    "scope": "single garment, 60 units",
+    "royalty_pct": 20,
+    "status": "requested",
+    "signed_at": null
+  },
+  {
+    "id": "lic_008",
+    "source_work_id": "wrk_p08",
+    "licensee_id": "art_007",
+    "scope": "overdye, 40 units",
+    "royalty_pct": 18,
+    "status": "negotiating",
+    "signed_at": null
+  }
+]

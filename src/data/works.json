@@ -1,0 +1,458 @@
+[
+  {
+    "id": "wrk_p01",
+    "slug": "adweneasa-strip",
+    "type": "pattern",
+    "title": "Adweneasa Strip",
+    "owner_id": "art_001",
+    "lat": 6.6885,
+    "lng": -1.6244,
+    "city": "Kumasi",
+    "year": 2024,
+    "description": "Kente strip motif, 7-colour warp, digitised for licensing.",
+    "media": [
+      "/media/works/wrk_p01_1.jpg",
+      "/media/works/wrk_p01_2.jpg"
+    ],
+    "price_usd": null,
+    "drop_id": null,
+    "license": "closed"
+  },
+  {
+    "id": "wrk_p02",
+    "slug": "jaipur-buta-grid",
+    "type": "pattern",
+    "title": "Jaipur Buta Grid",
+    "owner_id": "art_005",
+    "lat": 26.9124,
+    "lng": 75.7873,
+    "city": "Jaipur",
+    "year": 2023,
+    "description": "Hand-carved block print, paisley on a 4cm grid.",
+    "media": [
+      "/media/works/wrk_p02_1.jpg",
+      "/media/works/wrk_p02_2.jpg"
+    ],
+    "price_usd": null,
+    "drop_id": null,
+    "license": "closed"
+  },
+  {
+    "id": "wrk_p03",
+    "slug": "selbu-rose-xl",
+    "type": "pattern",
+    "title": "Selbu Rose XL",
+    "owner_id": "art_012",
+    "lat": 60.3913,
+    "lng": 5.3221,
+    "city": "Bergen",
+    "year": 2024,
+    "description": "Selbu mitten rose scaled to 40cm repeat for jacquard knit.",
+    "media": [
+      "/media/works/wrk_p03_1.jpg",
+      "/media/works/wrk_p03_2.jpg"
+    ],
+    "price_usd": null,
+    "drop_id": null,
+    "license": "closed"
+  },
+  {
+    "id": "wrk_p04",
+    "slug": "noise-field-04",
+    "type": "pattern",
+    "title": "Noise Field 04",
+    "owner_id": "art_017",
+    "lat": -34.6037,
+    "lng": -58.3816,
+    "city": "Buenos Aires",
+    "year": 2025,
+    "description": "Generative Perlin-noise textile, seeded, printed on recycled poly.",
+    "media": [
+      "/media/works/wrk_p04_1.jpg",
+      "/media/works/wrk_p04_2.jpg"
+    ],
+    "price_usd": null,
+    "drop_id": null,
+    "license": "attribution"
+  },
+  {
+    "id": "wrk_p05",
+    "slug": "tatreez-cross-set",
+    "type": "pattern",
+    "title": "Tatreez Cross Set",
+    "owner_id": "art_015",
+    "lat": 33.8938,
+    "lng": 35.5018,
+    "city": "Beirut",
+    "year": 2023,
+    "description": "Palestinian cross-stitch motifs redrawn for machine embroidery.",
+    "media": [
+      "/media/works/wrk_p05_1.jpg",
+      "/media/works/wrk_p05_2.jpg"
+    ],
+    "price_usd": null,
+    "drop_id": null,
+    "license": "closed"
+  },
+  {
+    "id": "wrk_p06",
+    "slug": "cochineal-overdye",
+    "type": "technique",
+    "title": "Cochineal Overdye",
+    "owner_id": "art_009",
+    "lat": 17.0732,
+    "lng": -96.7266,
+    "city": "Oaxaca",
+    "year": 2022,
+    "description": "Natural overdye process on reclaimed denim.",
+    "media": [
+      "/media/works/wrk_p06_1.jpg",
+      "/media/works/wrk_p06_2.jpg"
+    ],
+    "price_usd": null,
+    "drop_id": null,
+    "license": "attribution_royalty"
+  },
+  {
+    "id": "wrk_p07",
+    "slug": "adire-eleko-resist",
+    "type": "technique",
+    "title": "Adire Eleko Resist",
+    "owner_id": "art_011",
+    "lat": 6.5244,
+    "lng": 3.3792,
+    "city": "Lagos",
+    "year": 2024,
+    "description": "Cassava-paste resist on technical nylon.",
+    "media": [
+      "/media/works/wrk_p07_1.jpg",
+      "/media/works/wrk_p07_2.jpg"
+    ],
+    "price_usd": null,
+    "drop_id": null,
+    "license": "attribution_royalty"
+  },
+  {
+    "id": "wrk_p08",
+    "slug": "kyoto-aizome-12-dip",
+    "type": "technique",
+    "title": "Kyoto Aizome 12-dip",
+    "owner_id": "art_014",
+    "lat": 35.0116,
+    "lng": 135.7681,
+    "city": "Kyoto",
+    "year": 2021,
+    "description": "Twelve-dip indigo for deep saturation on hemp.",
+    "media": [
+      "/media/works/wrk_p08_1.jpg",
+      "/media/works/wrk_p08_2.jpg"
+    ],
+    "price_usd": null,
+    "drop_id": null,
+    "license": "closed"
+  },
+  {
+    "id": "wrk_ph1",
+    "slug": "static-garden",
+    "type": "photo",
+    "title": "Static Garden",
+    "owner_id": "art_003",
+    "lat": 19.4326,
+    "lng": -99.1332,
+    "city": "Mexico City",
+    "year": 2025,
+    "description": "Campaign series shot through CRT monitors.",
+    "media": [
+      "/media/works/wrk_ph1_1.jpg",
+      "/media/works/wrk_ph1_2.jpg"
+    ],
+    "price_usd": null,
+    "drop_id": null,
+    "license": "closed"
+  },
+  {
+    "id": "wrk_ph2",
+    "slug": "pudong-flash",
+    "type": "photo",
+    "title": "Pudong Flash",
+    "owner_id": "art_010",
+    "lat": 31.2304,
+    "lng": 121.4737,
+    "city": "Shanghai",
+    "year": 2025,
+    "description": "Direct-flash digicam lookbook.",
+    "media": [
+      "/media/works/wrk_ph2_1.jpg",
+      "/media/works/wrk_ph2_2.jpg"
+    ],
+    "price_usd": null,
+    "drop_id": null,
+    "license": "closed"
+  },
+  {
+    "id": "wrk_ph3",
+    "slug": "tenement-tape",
+    "type": "photo",
+    "title": "Tenement Tape",
+    "owner_id": "art_016",
+    "lat": 55.8642,
+    "lng": -4.2518,
+    "city": "Glasgow",
+    "year": 2025,
+    "description": "Camcorder stills, Glasgow close.",
+    "media": [
+      "/media/works/wrk_ph3_1.jpg",
+      "/media/works/wrk_ph3_2.jpg"
+    ],
+    "price_usd": null,
+    "drop_id": null,
+    "license": "attribution_royalty"
+  },
+  {
+    "id": "wrk_t01",
+    "slug": "loom-signal",
+    "type": "track",
+    "title": "Loom Signal",
+    "owner_id": "art_004",
+    "lat": 35.6762,
+    "lng": 139.6503,
+    "city": "Tokyo",
+    "year": 2025,
+    "description": "Ambient breakbeat built from loom recordings.",
+    "media": [
+      "/media/works/wrk_t01_1.jpg",
+      "/media/works/wrk_t01_2.jpg"
+    ],
+    "price_usd": null,
+    "drop_id": null,
+    "license": "closed"
+  },
+  {
+    "id": "wrk_t02",
+    "slug": "baile-modular-2",
+    "type": "track",
+    "title": "Baile Modular 2",
+    "owner_id": "art_013",
+    "lat": -23.5505,
+    "lng": -46.6333,
+    "city": "São Paulo",
+    "year": 2025,
+    "description": "Funk carioca drums + modular pads, 2:40.",
+    "media": [
+      "/media/works/wrk_t02_1.jpg",
+      "/media/works/wrk_t02_2.jpg"
+    ],
+    "price_usd": null,
+    "drop_id": null,
+    "license": "attribution_royalty"
+  },
+  {
+    "id": "wrk_t03",
+    "slug": "close-hum",
+    "type": "track",
+    "title": "Close Hum",
+    "owner_id": "art_016",
+    "lat": 55.8642,
+    "lng": -4.2518,
+    "city": "Glasgow",
+    "year": 2025,
+    "description": "Lo-fi drone for runway walk.",
+    "media": [
+      "/media/works/wrk_t03_1.jpg",
+      "/media/works/wrk_t03_2.jpg"
+    ],
+    "price_usd": null,
+    "drop_id": null,
+    "license": "attribution_royalty"
+  },
+  {
+    "id": "wrk_g01",
+    "slug": "kumasi-field-jacket",
+    "type": "garment",
+    "title": "Kumasi Field Jacket",
+    "owner_id": "art_002",
+    "lat": 52.52,
+    "lng": 13.405,
+    "city": "Berlin",
+    "year": 2025,
+    "description": "Deadstock wool field jacket with kente-strip yoke and recycled-nylon lining.",
+    "media": [
+      "/media/works/wrk_g01_1.jpg",
+      "/media/works/wrk_g01_2.jpg"
+    ],
+    "price_usd": 420,
+    "drop_id": "drop_001",
+    "license": "attribution"
+  },
+  {
+    "id": "wrk_g02",
+    "slug": "buta-grid-workshirt",
+    "type": "garment",
+    "title": "Buta Grid Workshirt",
+    "owner_id": "art_008",
+    "lat": 52.2297,
+    "lng": 21.0122,
+    "city": "Warsaw",
+    "year": 2025,
+    "description": "Zero-waste block workshirt in block-printed organic cotton.",
+    "media": [
+      "/media/works/wrk_g02_1.jpg",
+      "/media/works/wrk_g02_2.jpg"
+    ],
+    "price_usd": 260,
+    "drop_id": "drop_001",
+    "license": "attribution_royalty"
+  },
+  {
+    "id": "wrk_g03",
+    "slug": "selbu-overcoat",
+    "type": "garment",
+    "title": "Selbu Overcoat",
+    "owner_id": "art_018",
+    "lat": 37.5665,
+    "lng": 126.978,
+    "city": "Seoul",
+    "year": 2025,
+    "description": "Modular jacquard-knit overcoat, detachable sleeves.",
+    "media": [
+      "/media/works/wrk_g03_1.jpg",
+      "/media/works/wrk_g03_2.jpg"
+    ],
+    "price_usd": 640,
+    "drop_id": "drop_001",
+    "license": "attribution_royalty"
+  },
+  {
+    "id": "wrk_g04",
+    "slug": "noise-field-shell",
+    "type": "garment",
+    "title": "Noise Field Shell",
+    "owner_id": "art_002",
+    "lat": 52.52,
+    "lng": 13.405,
+    "city": "Berlin",
+    "year": 2026,
+    "description": "Lightweight shell printed with generative noise textile.",
+    "media": [
+      "/media/works/wrk_g04_1.jpg",
+      "/media/works/wrk_g04_2.jpg"
+    ],
+    "price_usd": 380,
+    "drop_id": "drop_002",
+    "license": "attribution"
+  },
+  {
+    "id": "wrk_g05",
+    "slug": "tatreez-mesh-dress",
+    "type": "garment",
+    "title": "Tatreez Mesh Dress",
+    "owner_id": "art_015",
+    "lat": 33.8938,
+    "lng": 35.5018,
+    "city": "Beirut",
+    "year": 2025,
+    "description": "Technical mesh slip with machine tatreez panels.",
+    "media": [
+      "/media/works/wrk_g05_1.jpg",
+      "/media/works/wrk_g05_2.jpg"
+    ],
+    "price_usd": 510,
+    "drop_id": "drop_001",
+    "license": "closed"
+  },
+  {
+    "id": "wrk_g06",
+    "slug": "overdye-uniform-trouser",
+    "type": "garment",
+    "title": "Overdye Uniform Trouser",
+    "owner_id": "art_007",
+    "lat": -26.2041,
+    "lng": 28.0473,
+    "city": "Johannesburg",
+    "year": 2025,
+    "description": "Upcycled security-uniform trouser, cochineal overdye.",
+    "media": [
+      "/media/works/wrk_g06_1.jpg",
+      "/media/works/wrk_g06_2.jpg"
+    ],
+    "price_usd": 230,
+    "drop_id": "drop_002",
+    "license": "closed"
+  },
+  {
+    "id": "wrk_g07",
+    "slug": "adire-cargo",
+    "type": "garment",
+    "title": "Adire Cargo",
+    "owner_id": "art_011",
+    "lat": 6.5244,
+    "lng": 3.3792,
+    "city": "Lagos",
+    "year": 2026,
+    "description": "Technical cargo pant with adire resist panels.",
+    "media": [
+      "/media/works/wrk_g07_1.jpg",
+      "/media/works/wrk_g07_2.jpg"
+    ],
+    "price_usd": 340,
+    "drop_id": "drop_002",
+    "license": "attribution_royalty"
+  },
+  {
+    "id": "wrk_g08",
+    "slug": "aizome-hemp-coat",
+    "type": "garment",
+    "title": "Aizome Hemp Coat",
+    "owner_id": "art_018",
+    "lat": 37.5665,
+    "lng": 126.978,
+    "city": "Seoul",
+    "year": 2026,
+    "description": "12-dip indigo hemp duster, modular collar.",
+    "media": [
+      "/media/works/wrk_g08_1.jpg",
+      "/media/works/wrk_g08_2.jpg"
+    ],
+    "price_usd": 720,
+    "drop_id": "drop_002",
+    "license": "attribution_royalty"
+  },
+  {
+    "id": "wrk_g09",
+    "slug": "kumasi-field-jacket-v2-(upcycled)",
+    "type": "garment",
+    "title": "Kumasi Field Jacket v2 (upcycled)",
+    "owner_id": "art_007",
+    "lat": -26.2041,
+    "lng": 28.0473,
+    "city": "Johannesburg",
+    "year": 2026,
+    "description": "Licensed derivative: Field Jacket pattern re-cut from reclaimed workwear.",
+    "media": [
+      "/media/works/wrk_g09_1.jpg",
+      "/media/works/wrk_g09_2.jpg"
+    ],
+    "price_usd": 390,
+    "drop_id": "drop_003",
+    "license": "closed"
+  },
+  {
+    "id": "wrk_g10",
+    "slug": "porto-strip-boot",
+    "type": "garment",
+    "title": "Porto Strip Boot",
+    "owner_id": "art_006",
+    "lat": 41.1579,
+    "lng": -8.6291,
+    "city": "Porto",
+    "year": 2025,
+    "description": "Goodyear-welted boot with kente-strip pull tab.",
+    "media": [
+      "/media/works/wrk_g10_1.jpg",
+      "/media/works/wrk_g10_2.jpg"
+    ],
+    "price_usd": 560,
+    "drop_id": "drop_001",
+    "license": "attribution"
+  }
+]

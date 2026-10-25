@@ -1,0 +1,26 @@
+[
+  {
+    "id": "drop_001",
+    "name": "Capsule 01 — Signal",
+    "opens": "2025-09-15",
+    "closes": "2025-10-20",
+    "status": "fulfilled",
+    "goal_units": 60
+  },
+  {
+    "id": "drop_002",
+    "name": "Capsule 02 — Resist",
+    "opens": "2026-01-20",
+    "closes": "2026-03-01",
+    "status": "in_production",
+    "goal_units": 80
+  },
+  {
+    "id": "drop_003",
+    "name": "Derivatives 01",
+    "opens": "2026-10-01",
+    "closes": "2026-11-15",
+    "status": "preorder_open",
+    "goal_units": 40
+  }
+]

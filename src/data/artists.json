@@ -1,0 +1,428 @@
+[
+  {
+    "id": "art_001",
+    "slug": "abena-owusu-ansah",
+    "name": "Abena Owusu-Ansah",
+    "roles": [
+      "textile_artist"
+    ],
+    "primary_craft": "textile",
+    "city": "Kumasi",
+    "country": "Ghana",
+    "lat": 6.6885,
+    "lng": -1.6244,
+    "bio": "Third-generation kente weaver reinterpreting strip-woven geometry for contemporary silhouettes.",
+    "availability": "open",
+    "default_license": "closed",
+    "portrait": "/media/portraits/art_001.jpg",
+    "joined_at": "2025-12-09",
+    "socials": {
+      "instagram": "@abena.studio"
+    }
+  },
+  {
+    "id": "art_002",
+    "slug": "lukas-brandt",
+    "name": "Lukas Brandt",
+    "roles": [
+      "designer"
+    ],
+    "primary_craft": "design",
+    "city": "Berlin",
+    "country": "Germany",
+    "lat": 52.52,
+    "lng": 13.405,
+    "bio": "Outerwear designer working in deadstock wool and recycled nylon. Techno-utilitarian cuts.",
+    "availability": "open",
+    "default_license": "attribution",
+    "portrait": "/media/portraits/art_002.jpg",
+    "joined_at": "2025-03-24",
+    "socials": {
+      "instagram": "@lukas.studio"
+    }
+  },
+  {
+    "id": "art_003",
+    "slug": "ximena-ortiz-rueda",
+    "name": "Ximena Ortiz Rueda",
+    "roles": [
+      "photographer",
+      "stylist"
+    ],
+    "primary_craft": "photo",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "lat": 19.4326,
+    "lng": -99.1332,
+    "bio": "Campaign photographer. Shoots on expired film and CRT monitors.",
+    "availability": "open",
+    "default_license": "closed",
+    "portrait": "/media/portraits/art_003.jpg",
+    "joined_at": "2025-10-14",
+    "socials": {
+      "instagram": "@ximena.studio"
+    }
+  },
+  {
+    "id": "art_004",
+    "slug": "kenji-morimoto",
+    "name": "Kenji Morimoto",
+    "roles": [
+      "musician"
+    ],
+    "primary_craft": "sound",
+    "city": "Tokyo",
+    "country": "Japan",
+    "lat": 35.6762,
+    "lng": 139.6503,
+    "bio": "Composer of ambient and breakbeat scores for runway and campaign film.",
+    "availability": "open",
+    "default_license": "closed",
+    "portrait": "/media/portraits/art_004.jpg",
+    "joined_at": "2025-02-07",
+    "socials": {
+      "instagram": "@kenji.studio"
+    }
+  },
+  {
+    "id": "art_005",
+    "slug": "priya-raghunathan",
+    "name": "Priya Raghunathan",
+    "roles": [
+      "textile_artist",
+      "pattern_maker"
+    ],
+    "primary_craft": "textile",
+    "city": "Jaipur",
+    "country": "India",
+    "lat": 26.9124,
+    "lng": 75.7873,
+    "bio": "Hand block-printer. Licenses motifs under attribution + royalty terms.",
+    "availability": "open",
+    "default_license": "closed",
+    "portrait": "/media/portraits/art_005.jpg",
+    "joined_at": "2025-09-07",
+    "socials": {
+      "instagram": "@priya.studio"
+    }
+  },
+  {
+    "id": "art_006",
+    "slug": "tomás-albuquerque",
+    "name": "Tomás Albuquerque",
+    "roles": [
+      "maker"
+    ],
+    "primary_craft": "make",
+    "city": "Porto",
+    "country": "Portugal",
+    "lat": 41.1579,
+    "lng": -8.6291,
+    "bio": "Fourth-generation shoemaker. Small-batch Goodyear-welted boots and sandals.",
+    "availability": "booked",
+    "default_license": "attribution",
+    "portrait": "/media/portraits/art_006.jpg",
+    "joined_at": "2025-08-19",
+    "socials": {
+      "instagram": "@tomás.studio"
+    }
+  },
+  {
+    "id": "art_007",
+    "slug": "zanele-mokoena",
+    "name": "Zanele Mokoena",
+    "roles": [
+      "designer"
+    ],
+    "primary_craft": "design",
+    "city": "Johannesburg",
+    "country": "South Africa",
+    "lat": -26.2041,
+    "lng": 28.0473,
+    "bio": "Streetwear designer. Upcycles workwear uniforms into tailored pieces.",
+    "availability": "limited",
+    "default_license": "closed",
+    "portrait": "/media/portraits/art_007.jpg",
+    "joined_at": "2025-03-23",
+    "socials": {
+      "instagram": "@zanele.studio"
+    }
+  },
+  {
+    "id": "art_008",
+    "slug": "hana-kowalczyk",
+    "name": "Hana Kowalczyk",
+    "roles": [
+      "designer",
+      "pattern_maker"
+    ],
+    "primary_craft": "design",
+    "city": "Warsaw",
+    "country": "Poland",
+    "lat": 52.2297,
+    "lng": 21.0122,
+    "bio": "Pattern cutter and designer. Zero-waste block construction.",
+    "availability": "booked",
+    "default_license": "attribution_royalty",
+    "portrait": "/media/portraits/art_008.jpg",
+    "joined_at": "2025-05-05",
+    "socials": {
+      "instagram": "@hana.studio"
+    }
+  },
+  {
+    "id": "art_009",
+    "slug": "diego-salazar",
+    "name": "Diego Salazar",
+    "roles": [
+      "maker"
+    ],
+    "primary_craft": "make",
+    "city": "Oaxaca",
+    "country": "Mexico",
+    "lat": 17.0732,
+    "lng": -96.7266,
+    "bio": "Backstrap loom weaver and natural dyer (cochineal, indigo).",
+    "availability": "open",
+    "default_license": "attribution_royalty",
+    "portrait": "/media/portraits/art_009.jpg",
+    "joined_at": "2025-02-03",
+    "socials": {
+      "instagram": "@diego.studio"
+    }
+  },
+  {
+    "id": "art_010",
+    "slug": "mei-lin-zhao",
+    "name": "Mei-Lin Zhao",
+    "roles": [
+      "photographer"
+    ],
+    "primary_craft": "photo",
+    "city": "Shanghai",
+    "country": "China",
+    "lat": 31.2304,
+    "lng": 121.4737,
+    "bio": "Editorial photographer. Y2K digital-camera aesthetic.",
+    "availability": "booked",
+    "default_license": "closed",
+    "portrait": "/media/portraits/art_010.jpg",
+    "joined_at": "2025-06-28",
+    "socials": {
+      "instagram": "@mei.studio"
+    }
+  },
+  {
+    "id": "art_011",
+    "slug": "oluwaseun-adeyemi",
+    "name": "Oluwaseun Adeyemi",
+    "roles": [
+      "designer",
+      "stylist"
+    ],
+    "primary_craft": "design",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "lat": 6.5244,
+    "lng": 3.3792,
+    "bio": "Designer and stylist. Adire resist-dye meets technical fabrics.",
+    "availability": "limited",
+    "default_license": "attribution_royalty",
+    "portrait": "/media/portraits/art_011.jpg",
+    "joined_at": "2025-01-24",
+    "socials": {
+      "instagram": "@oluwaseun.studio"
+    }
+  },
+  {
+    "id": "art_012",
+    "slug": "ingrid-solheim",
+    "name": "Ingrid Solheim",
+    "roles": [
+      "textile_artist"
+    ],
+    "primary_craft": "textile",
+    "city": "Bergen",
+    "country": "Norway",
+    "lat": 60.3913,
+    "lng": 5.3221,
+    "bio": "Knitwear artist. Reinterprets selbu mitten motifs at garment scale.",
+    "availability": "booked",
+    "default_license": "closed",
+    "portrait": "/media/portraits/art_012.jpg",
+    "joined_at": "2025-07-03",
+    "socials": {
+      "instagram": "@ingrid.studio"
+    }
+  },
+  {
+    "id": "art_013",
+    "slug": "rafael-nunes",
+    "name": "Rafael Nunes",
+    "roles": [
+      "musician"
+    ],
+    "primary_craft": "sound",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5505,
+    "lng": -46.6333,
+    "bio": "Producer. Baile funk and modular synth for runway audio.",
+    "availability": "limited",
+    "default_license": "attribution_royalty",
+    "portrait": "/media/portraits/art_013.jpg",
+    "joined_at": "2025-10-07",
+    "socials": {
+      "instagram": "@rafael.studio"
+    }
+  },
+  {
+    "id": "art_014",
+    "slug": "aiko-tanaka",
+    "name": "Aiko Tanaka",
+    "roles": [
+      "maker"
+    ],
+    "primary_craft": "make",
+    "city": "Kyoto",
+    "country": "Japan",
+    "lat": 35.0116,
+    "lng": 135.7681,
+    "bio": "Indigo dye house. Hand-dyes yardage for small runs.",
+    "availability": "open",
+    "default_license": "closed",
+    "portrait": "/media/portraits/art_014.jpg",
+    "joined_at": "2025-11-08",
+    "socials": {
+      "instagram": "@aiko.studio"
+    }
+  },
+  {
+    "id": "art_015",
+    "slug": "noor-haddad",
+    "name": "Noor Haddad",
+    "roles": [
+      "designer"
+    ],
+    "primary_craft": "design",
+    "city": "Beirut",
+    "country": "Lebanon",
+    "lat": 33.8938,
+    "lng": 35.5018,
+    "bio": "Eveningwear designer. Tatreez embroidery on technical mesh.",
+    "availability": "limited",
+    "default_license": "closed",
+    "portrait": "/media/portraits/art_015.jpg",
+    "joined_at": "2025-04-28",
+    "socials": {
+      "instagram": "@noor.studio"
+    }
+  },
+  {
+    "id": "art_016",
+    "slug": "callum-fraser",
+    "name": "Callum Fraser",
+    "roles": [
+      "photographer",
+      "musician"
+    ],
+    "primary_craft": "photo",
+    "city": "Glasgow",
+    "country": "UK",
+    "lat": 55.8642,
+    "lng": -4.2518,
+    "bio": "Shoots and scores. Lo-fi camcorder campaign films.",
+    "availability": "open",
+    "default_license": "attribution_royalty",
+    "portrait": "/media/portraits/art_016.jpg",
+    "joined_at": "2025-05-15",
+    "socials": {
+      "instagram": "@callum.studio"
+    }
+  },
+  {
+    "id": "art_017",
+    "slug": "sofia-benitez",
+    "name": "Sofía Benítez",
+    "roles": [
+      "pattern_maker",
+      "textile_artist"
+    ],
+    "primary_craft": "textile",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "lat": -34.6037,
+    "lng": -58.3816,
+    "bio": "Digital textile designer. Generative patterns printed on recycled poly.",
+    "availability": "limited",
+    "default_license": "attribution",
+    "portrait": "/media/portraits/art_017.jpg",
+    "joined_at": "2025-06-12",
+    "socials": {
+      "instagram": "@sofia.studio"
+    }
+  },
+  {
+    "id": "art_018",
+    "slug": "dae-jung-park",
+    "name": "Dae-Jung Park",
+    "roles": [
+      "designer"
+    ],
+    "primary_craft": "design",
+    "city": "Seoul",
+    "country": "South Korea",
+    "lat": 37.5665,
+    "lng": 126.978,
+    "bio": "Technical tailoring. Modular garments with detachable panels.",
+    "availability": "open",
+    "default_license": "attribution_royalty",
+    "portrait": "/media/portraits/art_018.jpg",
+    "joined_at": "2025-12-22",
+    "socials": {
+      "instagram": "@dae.studio"
+    }
+  },
+  {
+    "id": "art_019",
+    "slug": "fatou-diallo",
+    "name": "Fatou Diallo",
+    "roles": [
+      "maker"
+    ],
+    "primary_craft": "make",
+    "city": "Dakar",
+    "country": "Senegal",
+    "lat": 14.7167,
+    "lng": -17.4677,
+    "bio": "Atelier running a fair-wage production line, 12 seamstresses.",
+    "availability": "open",
+    "default_license": "attribution",
+    "portrait": "/media/portraits/art_019.jpg",
+    "joined_at": "2025-09-24",
+    "socials": {
+      "instagram": "@fatou.studio"
+    }
+  },
+  {
+    "id": "art_020",
+    "slug": "elias-weber",
+    "name": "Elias Weber",
+    "roles": [
+      "stylist"
+    ],
+    "primary_craft": "photo",
+    "city": "Vienna",
+    "country": "Austria",
+    "lat": 48.2082,
+    "lng": 16.3738,
+    "bio": "Stylist and set designer for lookbooks.",
+    "availability": "open",
+    "default_license": "attribution",
+    "portrait": "/media/portraits/art_020.jpg",
+    "joined_at": "2025-08-13",
+    "socials": {
+      "instagram": "@elias.studio"
+    }
+  }
+]

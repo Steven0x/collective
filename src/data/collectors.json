@@ -1,0 +1,50 @@
+[
+  {
+    "id": "usr_c01",
+    "name": "Marta Keller",
+    "city": "Zürich",
+    "role": "collector"
+  },
+  {
+    "id": "usr_c02",
+    "name": "Jordan Ellis",
+    "city": "New York",
+    "role": "collector"
+  },
+  {
+    "id": "usr_c03",
+    "name": "Yuki Sato",
+    "city": "Osaka",
+    "role": "collector"
+  },
+  {
+    "id": "usr_c04",
+    "name": "Amara Okafor",
+    "city": "London",
+    "role": "collector"
+  },
+  {
+    "id": "usr_c05",
+    "name": "Lucas Moreau",
+    "city": "Lyon",
+    "role": "collector"
+  },
+  {
+    "id": "usr_c06",
+    "name": "Chen Wei",
+    "city": "Singapore",
+    "role": "collector"
+  },
+  {
+    "id": "usr_c07",
+    "name": "Isabel Torres",
+    "city": "Madrid",
+    "role": "collector"
+  },
+  {
+    "id": "usr_c08",
+    "name": "Sam Patel",
+    "city": "Toronto",
+    "role": "collector"
+  }
+]
