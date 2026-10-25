@@ -22,7 +22,7 @@ export function Art({ seed, className = "", label, src }: { seed: string; classN
   const c = colors[h % colors.length], c2 = colors[(h * 7 + 1) % colors.length], c3 = colors[(h * 13 + 2) % colors.length];
   return (
     <div className={`art ${className}`} style={{ "--c": c, "--c2": c2, "--c3": c3 } as React.CSSProperties}>
-      {src && <img src={src} alt="" className="absolute inset-0 w-full h-full object-cover" />}
+      {src?.startsWith("http") && <img src={src} alt="" className="absolute inset-0 w-full h-full object-cover" />}
       {label && <span className="absolute bottom-2 left-2 mono text-muted">{label}</span>}
     </div>
   );

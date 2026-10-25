@@ -43,12 +43,22 @@ update profiles set role = 'curator' where email = 'you@example.com';
 ```
 (An allowlist trigger for this was blocked by a permission check during the build; one line does the job.)
 
+## Artist profiles (v0.5)
+Onboarding at `/me/onboard` — five steps saved as you go (`upsert_my_artist` RPC): **Identity** (name, name in own script → neon signs, pronouns, languages, roles, city pin via OpenStreetMap geocoder, bio, portrait → map pin, cover, links) · **Lineage** (relationship to tradition, heritage statement, mentors, 1–5 influence places → personal arcs on the map via `artist_influences`) · **Craft & terms** (specialties, materials, techniques, maker capacity, open-to, rate basis/range, currency, availability, default license) · **Work** (press/links for curators) · **Agreement** (versioned text in `agreements`, acceptance timestamped). Submits as `pending`; curator approves in `/admin` with the lineage statement visible.
+Public profile `/artists/[slug]`: cover, portrait, native-name neon, lineage block, terms, works, credits, public ledger. Map: `?artist=<id>` deep-links and draws their influence arcs.
+
+## Notifications
+`src/lib/email.ts` (Resend). Events: profile submitted, profile approved, you were credited, credit accepted, order confirmed. Logs to console until `RESEND_API_KEY` + `EMAIL_FROM` are set. Client components call `/api/notify` after an RPC succeeds; the server re-derives recipients from the DB.
+
+## Payouts
+`/api/connect` creates a Stripe Connect Express account per artist and returns an onboarding link (button in the studio). Until Stripe keys exist, payouts stay manual from the curator CSV.
+
 ## Payments
 `PreorderButton` tries `/api/checkout` (Stripe Checkout) first and falls back to `/api/preorder` (mock, writes a real order) when `STRIPE_SECRET_KEY` is unset. Webhook: `/api/stripe/webhook` → `place_preorder(..., stripe_session_id)`, idempotent on session id. Local test: `stripe listen --forward-to localhost:3000/api/stripe/webhook`.
 
 ## Database
 Live in Supabase. `supabase/schema.sql` is the reference; the applied migrations are:
-`collective_schema_v0`, `map_views_and_lineage_json`, `place_preorder_rpc`, `auth_profiles_roles_and_studio_rpcs`. RLS: public read on everything except `collectors`; writes go through RPCs with the service role.
+`collective_schema_v0`, `map_views_and_lineage_json`, `place_preorder_rpc`, `auth_profiles_roles_and_studio_rpcs`, `artist_profiles_v2`. RLS: public read on everything except `collectors`; writes go through RPCs with the service role.
 
 ## Next
 1. Add Stripe test keys → real checkout. Add `SUPABASE_SERVICE_ROLE_KEY` → mock preorders + webhook can write.

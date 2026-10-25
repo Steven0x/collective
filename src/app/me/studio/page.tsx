@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { Window, Art } from "@/components/ui";
 import { currentUser } from "@/lib/supabase-server";
 import CreditInbox from "./CreditInbox";
+import PayoutButton from "./PayoutButton";
 
 export const dynamic = "force-dynamic";
 
@@ -26,12 +27,15 @@ export default async function Studio() {
           <div className="mono text-yellow">STUDIO · {artist?.id} · <span className={artist?.status === "live" ? "text-green" : "text-orange"}>{artist?.status?.toUpperCase()}</span></div>
           <h1 className="display text-5xl mt-1">{artist?.name?.toUpperCase()}</h1>
         </div>
-        <Link href="/me/studio/new" className={`btn btn-green ${artist?.status !== "live" ? "opacity-50 pointer-events-none" : ""}`}>+ Publish a work</Link>
+        <div className="flex gap-2"><Link href="/me/onboard" className="btn">Edit profile</Link><Link href="/me/studio/new" className={`btn btn-green ${artist?.status !== "live" ? "opacity-50 pointer-events-none" : ""}`}>+ Publish a work</Link></div>
       </div>
       {artist?.status !== "live" && <p className="mono text-orange">PUBLISHING UNLOCKS WHEN A CURATOR APPROVES YOUR PROFILE.</p>}
 
       <div className="grid md:grid-cols-3 gap-4">
-        <Window title="EARNINGS"><div className="grid grid-cols-2 gap-2"><div><div className="mono text-muted">PAID</div><div className="display text-3xl text-green">${Number(earnings?.paid ?? 0).toFixed(0)}</div></div><div><div className="mono text-muted">ACCRUED</div><div className="display text-3xl text-orange">${Number(earnings?.accrued ?? 0).toFixed(0)}</div></div></div></Window>
+        <Window title="EARNINGS" right={artist?.stripe_account_id ? "PAYOUTS: STRIPE" : "PAYOUTS: MANUAL"}>
+          <div className="grid grid-cols-2 gap-2"><div><div className="mono text-muted">PAID</div><div className="display text-3xl text-green">${Number(earnings?.paid ?? 0).toFixed(0)}</div></div><div><div className="mono text-muted">ACCRUED</div><div className="display text-3xl text-orange">${Number(earnings?.accrued ?? 0).toFixed(0)}</div></div></div>
+          <PayoutButton connected={!!artist?.stripe_account_id} />
+        </Window>
         <Window title={`CREDITS TO CONFIRM // ${inbox?.length ?? 0}`} right="INBOX">
           {!inbox?.length ? <p className="mono text-muted">NOTHING PENDING.</p> : <CreditInbox rows={inbox as any} />}
         </Window>

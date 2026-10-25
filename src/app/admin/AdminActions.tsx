@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { supabaseBrowser } from "@/lib/supabase-browser";
 import { Window } from "@/components/ui";
 
-type Artist = { id: string; name: string; city: string; country: string; roles: string[]; bio: string; joined_at: string };
+type Artist = { id: string; name: string; city: string; country: string; roles: string[]; bio: string; joined_at: string; heritage_statement?: string; heritage_relation?: string; press?: string; onboarding_step?: number; slug: string };
 type Credit = { id: string; role: string; split_pct: number; artists: { name: string }; works: { title: string; slug: string } };
 type Drop = { id: string; name: string; opens: string; closes: string; status: string; goal_units: number };
 type Accrued = { artist_id: string; accrued: number; artists: { name: string; city: string } };
@@ -17,7 +17,10 @@ export default function AdminActions({ pendingArtists, pendingCredits, drops, ac
     setBusy(key); setMsg(null);
     const { data, error } = await supabaseBrowser().rpc(name, args);
     setBusy(null);
-    if (error) setMsg(`ERR: ${error.message}`); else { setMsg(`OK ${name}${data != null ? ` → ${JSON.stringify(data)}` : ""}`); router.refresh(); }
+    if (error) setMsg(`ERR: ${error.message}`); else {
+      if (name === "curator_set_artist_status" && args.p_status === "live") fetch("/api/notify", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ event: "profile_approved", id: args.p_artist_id }) }).catch(() => {});
+      setMsg(`OK ${name}${data != null ? ` → ${JSON.stringify(data)}` : ""}`); router.refresh();
+    }
   }
   async function saveDrop(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -39,6 +42,9 @@ export default function AdminActions({ pendingArtists, pendingCredits, drops, ac
                   <div className="flex justify-between"><span>{a.name}</span><span className="text-muted">{a.city}, {a.country} · {a.joined_at}</span></div>
                   <div className="text-muted">{a.roles.join(" · ")}</div>
                   <p className="text-sm mt-1">{a.bio}</p>
+                  {a.heritage_statement && <p className="text-sm mt-1 text-muted border-l-2 border-red pl-2">LINEAGE ({a.heritage_relation?.toUpperCase()}): {a.heritage_statement}</p>}
+                  {a.press && <p className="text-sm mt-1 text-muted whitespace-pre-line">PRESS/LINKS: {a.press}</p>}
+                  <div className="text-muted mt-1">{(a.onboarding_step ?? 0) >= 5 ? "SUBMITTED" : `INCOMPLETE · STEP ${(a.onboarding_step ?? 0) + 1}/5`} · <a href={`/artists/${a.slug}`} className="text-yellow">PREVIEW</a></div>
                   <div className="flex gap-2 mt-2">
                     <button disabled={busy === a.id} onClick={() => rpc("curator_set_artist_status", { p_artist_id: a.id, p_status: "live" }, a.id)} className="btn btn-green py-1 px-2 text-[10px]">Approve → live</button>
                     <button disabled={busy === a.id} onClick={() => rpc("curator_set_artist_status", { p_artist_id: a.id, p_status: "paused" }, a.id)} className="btn py-1 px-2 text-[10px]">Reject</button>

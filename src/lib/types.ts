@@ -42,7 +42,7 @@ export interface Contribution {
   role: string;
   source_work_id: string | null;
   split_pct: number;
-  status: "confirmed" | "pending";
+  status: "confirmed" | "pending" | "declined";
   confirmed_at: string;
 }
 

@@ -6,6 +6,7 @@ if (typeof window !== "undefined") maplibregl.setWorkerUrl("/maplibre-gl-worker.
 import Link from "next/link";
 import type { Pin, Lineage, Artist, Work, LineageArc } from "@/lib/types";
 import { CRAFT_COLOR, ROLE_COLOR } from "@/lib/colors";
+import type { ArtistInfluence } from "@/lib/data";
 
 // Free dark raster tiles for the scaffold. Swap for a MapTiler/Protomaps style JSON later.
 const STYLE: maplibregl.StyleSpecification = {
@@ -26,7 +27,9 @@ type Props = {
   artists: Artist[];
   works: Work[];
   lineages: Record<string, Lineage>;
+  influences: ArtistInfluence[];
   initialWork?: string;
+  initialArtist?: string;
 };
 
 // Great-circle interpolation so arcs curve instead of cutting straight.
@@ -50,11 +53,11 @@ function arcCoords(from: [number, number], to: [number, number], n = 48): [numbe
   return pts;
 }
 
-export default function InfluenceMap({ pins, artists, works, lineages, initialWork }: Props) {
+export default function InfluenceMap({ pins, artists, works, lineages, influences, initialWork, initialArtist }: Props) {
   const mapRef = useRef<maplibregl.Map | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [ready, setReady] = useState(false);
-  const [artistId, setArtistId] = useState<string | null>(null);
+  const [artistId, setArtistId] = useState<string | null>(initialArtist ?? null);
   const [workId, setWorkId] = useState<string | null>(initialWork ?? null);
   const [stageIdx, setStageIdx] = useState<number>(-1);
   const [trail, setTrail] = useState<string[]>([]);
@@ -160,8 +163,14 @@ export default function InfluenceMap({ pins, artists, works, lineages, initialWo
     const arcsSrc = map.getSource("arcs") as maplibregl.GeoJSONSource;
     const nodesSrc = map.getSource("nodes") as maplibregl.GeoJSONSource;
     if (!lineage || !work) {
-      arcsSrc.setData({ type: "FeatureCollection", features: [] });
-      nodesSrc.setData({ type: "FeatureCollection", features: [] });
+      // Personal influence arcs for a selected artist (before any garment is chosen)
+      const mine = artist ? influences.filter((i) => i.artist_id === artist.id) : [];
+      arcsSrc.setData({ type: "FeatureCollection", features: mine.map((i) => ({
+        type: "Feature", geometry: { type: "LineString", coordinates: arcCoords([i.lng, i.lat], [artist!.lng, artist!.lat]) },
+        properties: { color: ROLE_COLOR.influence, active: true } })) });
+      nodesSrc.setData({ type: "FeatureCollection", features: mine.map((i) => ({
+        type: "Feature", geometry: { type: "Point", coordinates: [i.lng, i.lat] },
+        properties: { name: i.place, role: "influence", color: ROLE_COLOR.influence, era: i.era, place: i.place } })) });
       return;
     }
     const activeStage = stageIdx >= 0 ? lineage.timeline[stageIdx] : null;
@@ -196,7 +205,7 @@ export default function InfluenceMap({ pins, artists, works, lineages, initialWo
     lineage.nodes.forEach((n) => b.extend([n.lng, n.lat]));
     b.extend([work.lng, work.lat]);
     map.fitBounds(b, { padding: { top: 60, bottom: 140, left: 60, right: 440 }, duration: 900, maxZoom: 4 });
-  }, [lineage, work, ready, stageIdx]);
+  }, [lineage, work, ready, stageIdx, artist, influences]);
 
   // fly to artist
   useEffect(() => {
@@ -319,6 +328,16 @@ export default function InfluenceMap({ pins, artists, works, lineages, initialWo
               <div className="mono flex justify-between">
                 <span>DEFAULT LICENSE</span><span>{artist.default_license.replace("_", " + ").toUpperCase()}</span>
               </div>
+              {influences.some((i) => i.artist_id === artist.id) && (
+                <div>
+                  <div className="mono text-muted mb-1">INFLUENCE PLACES // ON MAP</div>
+                  <ul className="mono space-y-1">
+                    {influences.filter((i) => i.artist_id === artist.id).map((i) => (
+                      <li key={i.id} className="flex justify-between gap-2"><span className="flex items-center gap-2"><span className="w-2 h-[2px] inline-block" style={{ background: ROLE_COLOR.influence }} />{i.place}</span><span className="text-muted truncate">{i.era}</span></li>
+                    ))}
+                  </ul>
+                </div>
+              )}
               <div>
                 <div className="mono text-muted mb-2">GALLERY // {artistWorks.length}</div>
                 <div className="grid grid-cols-2 gap-2">

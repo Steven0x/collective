@@ -122,3 +122,18 @@ export async function allLineages(): Promise<Record<string, Lineage>> {
   const entries = await Promise.all(gs.map(async (g) => [g.id, await lineageFor(g.id)] as const));
   return Object.fromEntries(entries.filter(([, l]) => l)) as Record<string, Lineage>;
 }
+
+// ---------- artist influence places (personal arcs) ----------
+export type ArtistInfluence = { id: string; artist_id: string; place: string; lat: number; lng: number; era?: string | null; note?: string | null };
+const JSON_INFLUENCES: ArtistInfluence[] = [
+  { id: "ainf_1", artist_id: "art_001", place: "Bonwire, Ashanti", lat: 6.77, lng: -1.526, era: "childhood", note: "Learned on my grandmother's loom." },
+  { id: "ainf_2", artist_id: "art_001", place: "London, Brixton", lat: 51.462, lng: -0.115, era: "2010s", note: "Market textiles, diaspora colour." },
+  { id: "ainf_3", artist_id: "art_002", place: "Detroit", lat: 42.331, lng: -83.046, era: "1990s", note: "Techno, workwear." },
+  { id: "ainf_4", artist_id: "art_002", place: "Kyoto", lat: 35.011, lng: 135.768, era: "2019", note: "Indigo residency." },
+  { id: "ainf_5", artist_id: "art_007", place: "Soweto", lat: -26.268, lng: 27.858, era: "always", note: "Pantsula tailoring." },
+  { id: "ainf_6", artist_id: "art_018", place: "Dongdaemun", lat: 37.566, lng: 127.009, era: "2010s", note: "Night fabric market." },
+];
+export const artistInfluences = (artistId: string): Promise<ArtistInfluence[]> =>
+  useSupabase() ? rows("artist_influences", (q) => q.eq("artist_id", artistId).order("created_at")) : Promise.resolve(JSON_INFLUENCES.filter((i) => i.artist_id === artistId));
+export const allArtistInfluences = (): Promise<ArtistInfluence[]> =>
+  useSupabase() ? rows("artist_influences") : Promise.resolve(JSON_INFLUENCES);

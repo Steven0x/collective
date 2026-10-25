@@ -3,7 +3,6 @@ import { redirect } from "next/navigation";
 import { Window } from "@/components/ui";
 import { currentUser } from "@/lib/supabase-server";
 import { useSupabase } from "@/lib/supabase";
-import BecomeArtistForm from "./BecomeArtistForm";
 import { createHash } from "crypto";
 
 export const dynamic = "force-dynamic";
@@ -43,13 +42,14 @@ export default async function Me() {
             <div><div className="text-muted">ROLES</div>{artist.roles.join(" · ")}</div>
             <div><div className="text-muted">DEFAULT LICENSE</div>{artist.default_license}</div>
           </div>
-          {artist.status === "pending" && <p className="mono text-orange mt-4">A CURATOR WILL REVIEW YOUR PROFILE BEFORE IT GOES LIVE ON THE MAP. YOU CAN STILL BROWSE AND PREORDER.</p>}
-          <Link href={`/artists/${artist.slug}`} className="btn mt-4">Public profile →</Link>
+          {artist.status === "pending" && artist.onboarding_step < 5 && <p className="mono text-orange mt-4">ONBOARDING INCOMPLETE — STEP {artist.onboarding_step + 1} OF 5. <Link href="/me/onboard" className="underline">CONTINUE →</Link></p>}
+          {artist.status === "pending" && artist.onboarding_step >= 5 && <p className="mono text-orange mt-4">SUBMITTED. A CURATOR WILL REVIEW YOUR PROFILE BEFORE IT GOES LIVE ON THE MAP. YOU CAN STILL BROWSE AND PREORDER.</p>}
+          <div className="flex gap-2 mt-4"><Link href={`/artists/${artist.slug}`} className="btn">Public profile →</Link><Link href="/me/onboard" className="btn">Edit profile</Link></div>
         </Window>
       ) : (
         <Window title="BECOME AN ARTIST // 5 STEPS" right="OPTIONAL">
-          <p className="text-muted mb-4">Designers, weavers, shoemakers, photographers, musicians, ateliers. Your city becomes your pin on the map.</p>
-          <BecomeArtistForm />
+          <p className="text-ink/80 mb-4">Designers, weavers, shoemakers, photographers, musicians, ateliers. Identity, lineage, craft, work, agreement — about ten minutes, saved as you go. Your city becomes your pin on the map.</p>
+          <Link href="/me/onboard" className="btn btn-green">Start onboarding →</Link>
         </Window>
       )}
 

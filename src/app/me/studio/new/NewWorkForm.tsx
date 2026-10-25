@@ -46,8 +46,8 @@ export default function NewWorkForm({ me, artists, sources, drops }: { me: strin
     });
     setBusy(null);
     if (error) return setErr(error.message);
+    if (type === "garment") await fetch("/api/notify", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ event: "work_published", id: data }) }).catch(() => {});
     router.push("/me/studio"); router.refresh();
-    void data;
   }
 
   return (

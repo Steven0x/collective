@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import { useSupabase } from "@/lib/supabase";
 import { revalidatePath } from "next/cache";
+import { emails } from "@/lib/email";
+import { workById } from "@/lib/data";
 
 // Mock checkout. When Stripe lands, this becomes: create Checkout Session → redirect;
 // and the webhook handler calls the same place_preorder RPC with the session id.
@@ -19,5 +21,7 @@ export async function POST(req: Request) {
   });
   if (error) return NextResponse.json({ error: error.message }, { status: 400 });
   revalidatePath("/shop"); revalidatePath("/");
+  const w = await workById(workId);
+  emails.orderConfirmed(email, name, w?.title ?? workId, Number(qty), Number(data.total_usd), data.order_id).catch(() => {});
   return NextResponse.json(data);
 }

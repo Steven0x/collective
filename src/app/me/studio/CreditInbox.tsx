@@ -12,7 +12,7 @@ export default function CreditInbox({ rows }: { rows: Row[] }) {
     setBusy(id);
     const { error } = await supabaseBrowser().rpc("respond_to_credit", { p_contribution_id: id, p_accept: accept });
     setBusy(null);
-    if (error) alert(error.message); else router.refresh();
+    if (error) alert(error.message); else { if (accept) fetch("/api/notify", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ event: "credit_accepted", id }) }).catch(() => {}); router.refresh(); }
   }
   return (
     <ul className="mono space-y-2">
