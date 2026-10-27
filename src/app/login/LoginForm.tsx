@@ -10,7 +10,7 @@ export default function LoginForm({ next }: { next: string }) {
     e.preventDefault(); setBusy(true); setErr(null);
     const email = String(new FormData(e.currentTarget).get("email"));
     const { error } = await supabaseBrowser().auth.signInWithOtp({
-      email, options: { emailRedirectTo: `${location.origin}/auth/callback?next=${encodeURIComponent(next)}` },
+      email, options: { emailRedirectTo: `${process.env.NEXT_PUBLIC_SITE_URL || location.origin}/auth/callback?next=${encodeURIComponent(next)}` },
     });
     setBusy(false);
     if (error) setErr(error.message); else setSent(true);

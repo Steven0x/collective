@@ -17,6 +17,13 @@ export async function middleware(req: NextRequest) {
   });
   const { data: { user } } = await sb.auth.getUser();
   const p = req.nextUrl.pathname;
+  // Supabase falls back to the Site URL when a redirect isn't allow-listed, landing `?code=` on any page.
+  const code = req.nextUrl.searchParams.get("code");
+  if (code && !p.startsWith("/auth/")) {
+    const url = req.nextUrl.clone(); url.pathname = "/auth/callback"; url.search = "";
+    url.searchParams.set("code", code); url.searchParams.set("next", p === "/" ? "/me" : p);
+    return NextResponse.redirect(url);
+  }
   if (!user && (p.startsWith("/me") || p.startsWith("/admin"))) {
     const url = req.nextUrl.clone(); url.pathname = "/login"; url.searchParams.set("next", p);
     return NextResponse.redirect(url);
