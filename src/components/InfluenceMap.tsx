@@ -8,19 +8,8 @@ import type { Pin, Lineage, Artist, Work, LineageArc } from "@/lib/types";
 import { CRAFT_COLOR, ROLE_COLOR } from "@/lib/colors";
 import type { ArtistInfluence } from "@/lib/data";
 
-// Free dark raster tiles for the scaffold. Swap for a MapTiler/Protomaps style JSON later.
-const STYLE: maplibregl.StyleSpecification = {
-  version: 8,
-  sources: {
-    carto: {
-      type: "raster",
-      tiles: ["https://basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}@2x.png"],
-      tileSize: 256,
-      attribution: "© OpenStreetMap © CARTO",
-    },
-  },
-  layers: [{ id: "carto", type: "raster", source: "carto", paint: { "raster-saturation": -0.6, "raster-contrast": 0.25, "raster-hue-rotate": 230, "raster-brightness-max": 0.75 } }],
-};
+// OpenFreeMap: free vector tiles, no API key. Swap for a MapTiler style URL for a custom retro look.
+const STYLE = "https://tiles.openfreemap.org/styles/dark";
 
 type Props = {
   pins: Pin[];
