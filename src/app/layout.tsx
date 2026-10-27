@@ -53,7 +53,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <main className="flex-1">{children}</main>
         <footer className="border-t border-line">
           <div className="mx-auto max-w-7xl px-4 py-8 flex flex-wrap gap-6 justify-between mono text-muted">
-            <span>© 2026 COLLECTIVE · ARTIST-OWNED · V0.4</span>
+            <span>© 2026 COLLECTIVE · ARTIST-OWNED · V0.5</span>
             <span className="flex gap-4">
               <Link href="/about#licensing">LICENSING</Link>
               <Link href="/about#faq">FAQ</Link>
